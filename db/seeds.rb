@@ -40,11 +40,11 @@ end
 
 
 User.create(
-    name: "彭兆卿",
+    name: "程子俊",
     email: "admin@test.com",
-    num: "201628008629001",
-    major: "计算机软件与理论",
-    department: "计算机与控制学院",
+    num: "201828008629001",
+    major: "计算机应用技术",
+    department: "网络空间安全学院",
     password: "password",
     password_confirmation: "password",
     admin: true
