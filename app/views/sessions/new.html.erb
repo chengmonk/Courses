@@ -25,14 +25,18 @@
             <div class="checkbox">
               <label><%= f.check_box :remember_me %>记住我</label>
             </div>
-
+            
             <%= button_tag(type: "submit", class: "btn btn-success btn-block") do %>
                 <span class="glyphicon glyphicon-off"></span>登陆
             <% end %>
 
         <% end %>
       </div>
-
+       <div class="panel-footer">
+        <p>
+          <%= link_to "忘记密码", forgot_path %>
+        </p>
+      </div>
       <div class="panel-footer">
         <p>没有账号?
           <%= link_to "注册", new_user_path %>

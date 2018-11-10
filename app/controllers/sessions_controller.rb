@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
   include SessionsHelper
 
-  def create
+  def create    
     user = User.find_by(email: login_params[:email].downcase)
     if user && user.authenticate(login_params[:password])
       log_in user
@@ -13,8 +13,22 @@ class SessionsController < ApplicationController
     redirect_to root_url, :flash => flash
   end
 
-  def new
+  def forgot
+  end
 
+  def reset   
+    mail= email_params[:email].downcase
+    unless mail.blank? && mail.empty?
+      UserMailer.password_reset(mail).deliver
+      flash={:info => "激活邮件已发送至 #{mail},请注意查收！"}  
+    else 
+      flash= {:danger => '账号不能为空'}
+    end
+    redirect_to root_url,:flash => flash
+  end  
+
+  def new
+    @email
   end
 
   def destroy
@@ -25,5 +39,8 @@ class SessionsController < ApplicationController
   private
   def login_params
     params.require(:session).permit(:email, :password)
+  end
+  def email_params
+    params.require(:email).permit(:email)
   end
 end

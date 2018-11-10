@@ -75,6 +75,42 @@
         null,
         null
       ],
+      "/Users/chengmonk/RubymineProjects/Courses/app/mailers/user_mailer.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/chengmonk/RubymineProjects/Courses/app/mailers/application_mailer.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/chengmonk/RubymineProjects/Courses/app/helpers/user_mailer_helper.rb": [
+        1,
+        null
+      ],
       "/Users/chengmonk/RubymineProjects/Courses/app/controllers/homes_controller.rb": [
         1,
         null,
@@ -183,6 +219,16 @@
         1,
         null,
         null,
+        1,
+        null,
+        0,
+        null,
+        0,
+        null,
+        null,
+        1,
+        1,
+        null,
         null,
         1,
         0,
@@ -193,13 +239,16 @@
         1,
         2,
         null,
+        1,
+        0,
+        null,
         null
       ],
-      "/Users/chengmonk/RubymineProjects/Courses/app/mailers/application_mailer.rb": [
-        0,
-        0,
-        0,
-        0
+      "/Users/chengmonk/RubymineProjects/Courses/app/controllers/user_mailer_controller.rb": [
+        1,
+        1,
+        null,
+        null
       ],
       "/Users/chengmonk/RubymineProjects/Courses/app/models/grade.rb": [
         0,
@@ -449,6 +498,6 @@
         0
       ]
     },
-    "timestamp": 1541670705
+    "timestamp": 1541821093
   }
 }

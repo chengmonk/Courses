@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'user_mailer/accout_activation'
+
+  get 'user_mailer/password_reset'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -16,7 +20,8 @@ Rails.application.routes.draw do
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   root 'homes#index'
-
+  match '/forgot', to: 'sessions#forgot', via: 'get'
+  match '/forgot', to: 'sessions#reset', via: 'post'
   resources :courses do
     member do
       get :select
@@ -31,7 +36,7 @@ Rails.application.routes.draw do
 
   resources :grades, only: [:index, :update]
   resources :users
-
+  resources :user_mailer
   get 'sessions/login' => 'sessions#new'
   post 'sessions/login' => 'sessions#create'
   delete 'sessions/logout' => 'sessions#destroy'
