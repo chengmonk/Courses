@@ -20,7 +20,7 @@ class SessionsController < ApplicationController
     mail= email_params[:email].downcase
     unless mail.blank? && mail.empty?
       UserMailer.password_reset(mail).deliver
-      flash={:info => "激活邮件已发送至 #{mail},请注意查收！"}  
+      flash={:info => "重置密码邮件已发送至 #{mail},请注意查收！"}  
     else 
       flash= {:danger => '账号不能为空'}
     end

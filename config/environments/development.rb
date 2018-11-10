@@ -38,9 +38,18 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
-  config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.delivery_method = :test
-  host = 'localhost:3000'
-  config.action_mailer.default_url_options = {host: host}
 
+  ActionMailer::Base.delivery_method = :smtp  
+  config.action_mailer.perform_deliveries = true  
+  config.action_mailer.raise_delivery_errors = true    
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.default :charset => "utf-8"  
+  ActionMailer::Base.smtp_settings = {    
+      :address => "smtp.163.com", #邮件服务器地址 
+      :port => 25,  
+      :domain => "163.com", #服务器域名，如xxx@yeah.net域名就是yeah.net
+      :authentication => :login,   
+      :user_name => "Course_iie",  #邮件用户名，如xxx@yeah.net用户名就是xxx
+      :password => "Ssys821",  #与登录密码不同，此处是客户端授权密码，切记！
+  }
 end
