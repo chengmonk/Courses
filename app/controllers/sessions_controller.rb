@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
     end
     redirect_to root_url, :flash => flash
   end
-
+  
   def forgot
   end
 

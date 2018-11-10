@@ -48,6 +48,7 @@ User.create(
     password: "password",
     password_confirmation: "password",
     admin: true
+    active: true
 )
 
 teacher_map={
