@@ -3,10 +3,14 @@ class SessionsController < ApplicationController
 
   def create    
     user = User.find_by(email: login_params[:email].downcase)
-    if user && user.authenticate(login_params[:password])
-      log_in user
-      params[:session][:remember_me] == '1' ? remember_user(user) : forget_user(user)
-      flash= {:info => "欢迎回来: #{user.name} :)"}
+    if user && user.authenticate(login_params[:password]) 
+      if user.active
+        log_in user
+        params[:session][:remember_me] == '1' ? remember_user(user) : forget_user(user)
+        flash= {:info => "欢迎回来: #{user.name} :)"}
+      else
+        flash= {:danger => '账号未激活，请先将账号激活！'}
+      end
     else
       flash= {:danger => '账号或密码错误'}
     end
@@ -19,8 +23,13 @@ class SessionsController < ApplicationController
   def reset   
     mail= email_params[:email].downcase
     unless mail.blank? && mail.empty?
-      UserMailer.password_reset(mail).deliver
-      flash={:info => "重置密码邮件已发送至 #{mail},请注意查收！"}  
+      user = User.find_by(email: email_params[:email].downcase)
+      if user != nil
+        UserMailer.password_reset(mail).deliver
+        flash={:info => "重置密码邮件已发送至 #{mail},请注意查收！"}
+      else
+        flash= {:danger => '不存在该用户，请核对输入的用户名！'}
+      end
     else 
       flash= {:danger => '账号不能为空'}
     end

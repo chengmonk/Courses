@@ -47,7 +47,7 @@ User.create(
     department: "网络空间安全学院",
     password: "password",
     password_confirmation: "password",
-    admin: true
+    admin: true,
     active: true
 )
 

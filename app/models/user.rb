@@ -32,7 +32,6 @@ class User < ActiveRecord::Base
   def User.new_token
     SecureRandom.urlsafe_base64
   end
-
   def user_remember
     self.remember_token = User.new_token
     update_attribute(:remember_digest, User.digest(remember_token))

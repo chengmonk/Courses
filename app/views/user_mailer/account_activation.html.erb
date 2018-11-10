@@ -1,5 +1,6 @@
-<h1>UserMailer#account_activation</h1>
+<h1><%= @user.name%>,您好！</h1>   
+请在浏览器的地址栏中输入如下地址来激活您的账户：<br/>   
+<a href='http://localhost:3000/users/activate?email=<%= @user.email%>&token=<%= @user.token%>'> 
+  http://localhost:3000/users/activate?email=<%= @user.email%>&token=<%= @user.token%> 
+  </a>  
 
-<p>
-  <%= @greeting %>, find me in app/views/user_mailer/account_activation.html.erb
-</p>

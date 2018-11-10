@@ -11,7 +11,7 @@ createuser username -P
 #Enter it again:
 
 创建数据库
-createdb dbname -O username -E UTF8 -e
+createdb courseselect_development -O chengmonk -E UTF8 -e;
 courseselect_development
 courseselect_test
 连接数据库

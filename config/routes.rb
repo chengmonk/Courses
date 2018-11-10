@@ -22,6 +22,7 @@ Rails.application.routes.draw do
   root 'homes#index'
   match '/forgot', to: 'sessions#forgot', via: 'get'
   match '/forgot', to: 'sessions#reset', via: 'post'
+  match '/', to: 'users#active', via: 'get'
   resources :courses do
     member do
       get :select
