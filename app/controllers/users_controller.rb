@@ -25,7 +25,7 @@ class UsersController < ApplicationController
     elsif user != nil && user.active == true then      
       flash= {:danger => '您的账户已经处于激活状态，请勿重复激活！'}
     else     
-      flash= {:danger => "激活失败！\n #{user.token} \n#{params[:token]}"}
+      flash= {:danger => "激活失败! "}
     end
     redirect_to root_url , :flash => flash  
   end

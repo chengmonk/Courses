@@ -9,7 +9,11 @@ class SessionsController < ApplicationController
         params[:session][:remember_me] == '1' ? remember_user(user) : forget_user(user)
         flash= {:info => "欢迎回来: #{user.name} :)"}
       else
-        flash= {:danger => '账号未激活，请先将账号激活！'}
+        user.token = SecureRandom.urlsafe_base64
+        if user.save
+          UserMailer.account_activation(user).deliver
+          flash= {:danger => '账号未激活，激活邮件已经发送至注册邮箱，请查阅邮件，先将账号激活！'}
+        end
       end
     else
       flash= {:danger => '账号或密码错误'}
@@ -47,7 +51,7 @@ class SessionsController < ApplicationController
     if @user != nil  && @user.token == params[:token] then
            
     else     
-      flash= {:danger => "验证失败！请重新获取重置密码邮件！\n #{@user.token} \n#{params[:token]}"}
+      flash= {:danger => "验证失败！请重新获取重置密码邮件！"}
       redirect_to root_url, :flash => flash
     end   
        
