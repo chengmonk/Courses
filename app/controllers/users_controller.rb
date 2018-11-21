@@ -18,7 +18,7 @@ class UsersController < ApplicationController
     end
   end
   def show
-    user = user = User.find_by(email: params[:email].downcase)
+    user = User.find_by(email: params[:email].downcase)
     if user != nil && user.active == false && user.token == params[:token] then
       user.update_attribute(:active , true)      
       flash= {:success => '恭喜您，您已经成功激活了您的账户！'}

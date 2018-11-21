@@ -19,13 +19,58 @@ class SessionsController < ApplicationController
   
   def forgot
   end
+  def active
+  end
 
-  def reset   
+  def reset_act    
+    user = User.find_by(email: login_params[:email].downcase)
+    if user  
+      user.password=login_params[:password]
+      user.save
+      flash= {:info => "密码修改成功，请登陆！ :)"}
+    else
+      flash= {:danger => '未知错误'}
+    end
+    redirect_to root_url, :flash => flash
+=begin
+    if @user != nil  && @user.token == params[:token] then
+      
+    else     
+      flash= {:danger => "验证失败！请重新获取重置密码邮件！\n #{@user.token} \n#{params[:token]}"}
+    end 
+=end
+  end
+
+  def reset    
+    @user = User.find_by(email: params[:email].downcase)
+    
+    if @user != nil  && @user.token == params[:token] then
+           
+    else     
+      flash= {:danger => "验证失败！请重新获取重置密码邮件！\n #{@user.token} \n#{params[:token]}"}
+      redirect_to root_url, :flash => flash
+    end   
+       
+  end
+  def send_active_email
     mail= email_params[:email].downcase
     unless mail.blank? && mail.empty?
-      user = User.find_by(email: email_params[:email].downcase)
-      if user != nil
-        UserMailer.password_reset(mail).deliver
+      @user = User.find_by(email: email_params[:email].downcase)
+      @user.token = SecureRandom.urlsafe_base64
+      if @user != nil && @user.save
+        UserMailer.password_reset(@user).deliver
+        flash={:info => "重置密码邮件已发送至 #{mail},请注意查收！"}
+      end
+    end
+  end
+
+  def send_reset_email   
+    mail= email_params[:email].downcase
+    unless mail.blank? && mail.empty?
+      @user = User.find_by(email: email_params[:email].downcase)
+      @user.token = SecureRandom.urlsafe_base64
+      if @user != nil && @user.save
+        UserMailer.password_reset(@user).deliver
         flash={:info => "重置密码邮件已发送至 #{mail},请注意查收！"}
       else
         flash= {:danger => '不存在该用户，请核对输入的用户名！'}
@@ -51,5 +96,8 @@ class SessionsController < ApplicationController
   end
   def email_params
     params.require(:email).permit(:email)
+  end
+  def reset_params
+    params.require(:reset).permit(:email, :password)
   end
 end

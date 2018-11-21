@@ -21,8 +21,11 @@ Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   root 'homes#index'
   match '/forgot', to: 'sessions#forgot', via: 'get'
-  match '/forgot', to: 'sessions#reset', via: 'post'
-  match '/', to: 'users#active', via: 'get'
+  match '/forgot', to: 'sessions#send_reset_email', via: 'post'
+  match '/reset', to: 'sessions#reset', via: 'get'
+  match '/reset', to: 'sessions#reset_act', via: 'post'
+  match '/active', to: 'sessions#send_active_email', via: 'post'
+  match '/active', to: 'sessions#active', via: 'get'
   resources :courses do
     member do
       get :select

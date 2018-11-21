@@ -39,7 +39,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'simplecov', :require => false, :group => :test
-
+gem 'simple_form', '~> 4.0'
 # for postgresql
 gem 'pg', '~> 0.18.4'
 
