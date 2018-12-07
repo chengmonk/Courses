@@ -1,4 +1,4 @@
 class ChangeForUsers < ActiveRecord::Migration
-  def change    
+  def change 
   end
 end
