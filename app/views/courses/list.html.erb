@@ -58,13 +58,11 @@
             </thead>
             <tbody>
 
-            <% n = 0 %>
             <% @courses.each do |course| %>
                
                 <tr>
-                  <!-- <td><%= (n = n + 1) %></td> -->
                   <td><%= course.course_code %></td>
-                  <td><%= course.name %></td>
+                  <td style="width: 100px;"><%= course.name %></td>
                   <td><%= course.course_time%> </td>
                   <td><%= course.credit %></td>
                   <td><%= course.limit_num %></td>
@@ -73,9 +71,12 @@
                   <td><%= course.teaching_type %></td>
                   <td><%= course.exam_type %></td>
                   <td><%= course.teacher.name %></td>
-                  <td><%= course.teacher.name %></td>
-                  <td><%= link_to "加入课程", select_course_path(course), class: 'btn-sm btn-info' %></td>
-
+                  <%= form_tag("/select", :method => :get) do %>
+                    <%= hidden_field_tag(:id, course.id) %>
+                    <td><%= check_box_tag(:degree, "true") %></td>
+                    <td><%= button_tag "加入课程" %></td>
+                  <% end %>
+                  
                 </tr>
             <% end %>
             </tbody>

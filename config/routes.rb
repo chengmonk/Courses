@@ -26,6 +26,7 @@ Rails.application.routes.draw do
   match '/reset', to: 'sessions#reset_act', via: 'post'
   match '/active', to: 'sessions#send_active_email', via: 'post'
   match '/active', to: 'sessions#active', via: 'get'
+  match '/select', to: 'courses#select', via: 'get'
   resources :courses do
     member do
       get :select

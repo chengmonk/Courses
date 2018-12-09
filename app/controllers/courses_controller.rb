@@ -75,37 +75,38 @@ class CoursesController < ApplicationController
     @op_courses_type = Course.select(:course_type).distinct.collect {|p| [p.course_type]}
     @op_times = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
     @op_depts = Course.select(:department).distinct.collect {|p| [p.department]}
-    @courses = Course.all.paginate(page: params[:page], per_page: 4)
+    @courses = Course.all
 
 
     # modify query method
 
     if params[:department]
-      @courses = @courses.where(:department => params[:department]).paginate(page: params[:page], per_page: 4)
+      @courses = @courses.where(:department => params[:department])
     end
 
     if params[:type]
-      @courses = @courses.where(:course_type => params[:type]).paginate(page: params[:page], per_page: 4)
+      @courses = @courses.where(:course_type => params[:type])
     end
     
     if params[:time]
-      @courses = @courses.where('course_time like :str', str: "%#{params[:time]}%").paginate(page: params[:page], per_page: 4)
+      @courses = @courses.where('course_time like :str', str: "%#{params[:time]}%")
     end
 
     if params[:name] != ""
-      @courses = @courses.where('name like :str', str: "%#{params[:name]}%").paginate(page: params[:page], per_page: 4)
+      @courses = @courses.where('name like :str', str: "%#{params[:name]}%")
     end
+    @courses = @courses.paginate(page: params[:page], per_page: 4)
 
     @remind_str = params[:department].to_s + params[:type].to_s + params[:time].to_s + params[:name].to_s
     
     tmp = []
     
-    @courses.each do |course|
-      if course.open == true
-        tmp << course
-      end
-    end
-    @course = tmp
+    # @courses.each do |course|
+    #   if course.open == true
+    #     tmp << course
+    #   end
+    # end
+    # @course = tmp
   end
 
 
@@ -115,22 +116,23 @@ class CoursesController < ApplicationController
     @select_course = Course.find_by_id(params[:id])
     @courses = current_user.courses
     @exit_course_id = @courses.find_by_id(params[:id])
-    @exit_course_time = @courses.find_by_course_time(params[:course_time])
+    # @exit_course_time = @courses.find_by_course_time(params[:course_time])
     if @select_course[:student_num] >= @select_course[:limit_num]
       flash = {:error => "Over numbers!: #{@select_course.name}"}
     elsif @exit_course_id
       flash = {:error => "Already selected!: #{@exit_course_id.name}"}
-    elsif @exit_course_time#need to modify later
-      flash = {:error => "Time conflict!: #{@exit_course_time.name}"}
+    # elsif @exit_course_time#need to modify later
+    #   flash = {:error => "Time conflict!: #{@exit_course_time.name}"}
     else
       current_user.courses << @select_course
+      if params[:degree]
+        @grade = current_user.grades.find_by(course_id: params[:id])
+        @grade.update(degree: true)
+      end
       flash = {:suceess => "成功选择课程: #{@select_course.name}"}
     end
         
-      
-    # @course = Course.find_by_id(params[:id])
-    # 
-    redirect_to list_courses_path, flash: flash
+    redirect_to :back, flash: flash
   end
 
   # def select

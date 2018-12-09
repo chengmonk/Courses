@@ -40,9 +40,9 @@ end
 
 
 User.create(
-    name: "彭兆卿",
-    email: "admin@test.com",
-    num: "201628008629001",
+    name: "dufuqiang",
+    email: "1317478158@qq.com",
+    num: "2018E8018****55",
     major: "计算机软件与理论",
     department: "计算机与控制学院",
     password: "password",
@@ -2425,20 +2425,20 @@ teacher_map.keys.each do |index|
 
 end
 
-(1..200).each do |index|
-  student=User.create!(
-      name: StudentGenerator.name,
-      email: "student#{index}@test.com",
-      num: "2016#{Faker::Number.number(11)}",
-      major: StudentGenerator.major,
-      department: StudentGenerator.department,
-      password: "password",
-      password_confirmation: "password",
-  )
+#(1..200).each do |index|
+#   student=User.create!(
+#       name: StudentGenerator.name,
+#       email: "student#{index}@test.com",
+#       num: "2016#{Faker::Number.number(11)}",
+#       major: StudentGenerator.major,
+#       department: StudentGenerator.department,
+#       password: "password",
+#       password_confirmation: "password",
+#   )
 
-  course_array=(1..34).to_a.sort { rand() - 0.5 }[1..rand(4..8)]
-  course_array.each do |index|
-    student.courses<<Course.find(index)
-  end
+#   course_array=(1..34).to_a.sort { rand() - 0.5 }[1..rand(4..8)]
+#   course_array.each do |index|
+#     student.courses<<Course.find(index)
+#   end
 
-end
+# end
