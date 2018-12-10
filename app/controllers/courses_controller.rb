@@ -71,7 +71,6 @@ class CoursesController < ApplicationController
   # end
 
   def list
-<<<<<<< HEAD
 
     @op_courses_type = Course.select(:course_type).distinct.collect {|p| [p.course_type]}
     @op_times = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
@@ -108,7 +107,6 @@ class CoursesController < ApplicationController
     #   end
     # end
     # @course = tmp
-=======
     #-------QiaoCode--------
     @courses = Course.where(:open => true).paginate(page: params[:page], per_page: 4)
     @course = @courses - current_user.courses
@@ -119,12 +117,10 @@ class CoursesController < ApplicationController
       end
     end
     @course = tmp
->>>>>>> 26ae913028bb49ac425167d0ec467bdaf72a3dae
   end
 
 
   def select
-<<<<<<< HEAD
 
     # time error
     @select_course = Course.find_by_id(params[:id])
@@ -147,12 +143,10 @@ class CoursesController < ApplicationController
     end
         
     redirect_to :back, flash: flash
-=======
     @course = Course.find_by_id(params[:id])
     current_user.courses << @course
     flash = {:suceess => "成功选择课程: #{@course.name}"}
     redirect_to courses_path, flash: flash
->>>>>>> 26ae913028bb49ac425167d0ec467bdaf72a3dae
   end
 
   # def select
