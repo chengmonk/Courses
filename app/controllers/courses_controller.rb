@@ -98,25 +98,7 @@ class CoursesController < ApplicationController
     @courses = @courses.paginate(page: params[:page], per_page: 4)
 
     @remind_str = params[:department].to_s + "  " + params[:type].to_s + "  "  + params[:time].to_s + "  "  +  params[:name].to_s
-    
-    # tmp = []
-    
-    # @courses.each do |course|
-    #   if course.open == true
-    #     tmp << course
-    #   end
-    # end
-    # @course = tmp
-    #-------QiaoCode--------
-    @courses = Course.where(:open => true).paginate(page: params[:page], per_page: 4)
-    @course = @courses - current_user.courses
-    tmp = []
-    @course.each do |course|
-      if course.open == true
-        tmp << course
-      end
-    end
-    @course = tmp
+
   end
 
 
