@@ -36,6 +36,8 @@
         </div>
         
         <div class="panel-body" style="min-height: 450px">
+          <%= form_tag("/select", :method => :get) do %>
+          <!-- A form is not allowed to be a child element of a table, tbody or tr. Attempting to put one there will tend to cause the browser to move the form to it appears after the table (while leaving its contents — table rows, table cells, inputs, etc — behind). -->
           <table class="table table-striped table-hover">
             <thead>
 
@@ -71,16 +73,14 @@
                   <td><%= course.teaching_type %></td>
                   <td><%= course.exam_type %></td>
                   <td><%= course.teacher.name %></td>
-                  <%= form_tag("/select", :method => :get) do %>
-                    <%= hidden_field_tag(:id, course.id) %>
-                    <td><%= check_box_tag(:degree, "true") %></td>
-                    <td><%= button_tag "加入课程" %></td>
-                  <% end %>
-                  
+                  <%= hidden_field_tag(:id, course.id) %>
+                  <td><%= check_box_tag(:degree, "true") %></td>
+                  <td><%= button_tag "加入课程" %></td>
                 </tr>
             <% end %>
             </tbody>
           </table>
+          <% end %>
           <%= will_paginate @courses %>
         </div>
       </div>
