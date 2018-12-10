@@ -80,15 +80,15 @@ class CoursesController < ApplicationController
 
     # modify query method
 
-    if params[:department]
+    if params[:department] != ""
       @courses = @courses.where(:department => params[:department])
     end
 
-    if params[:type]
+    if params[:type] != ""
       @courses = @courses.where(:course_type => params[:type])
     end
     
-    if params[:time]
+    if params[:time] != ""
       @courses = @courses.where('course_time like :str', str: "%#{params[:time]}%")
     end
 
@@ -97,9 +97,9 @@ class CoursesController < ApplicationController
     end
     @courses = @courses.paginate(page: params[:page], per_page: 4)
 
-    @remind_str = params[:department].to_s + params[:type].to_s + params[:time].to_s + params[:name].to_s
+    @remind_str = params[:department].to_s + "  " + params[:type].to_s + "  "  + params[:time].to_s + "  "  +  params[:name].to_s
     
-    tmp = []
+    # tmp = []
     
     # @courses.each do |course|
     #   if course.open == true

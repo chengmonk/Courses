@@ -16,7 +16,7 @@ class GradesController < ApplicationController
     #binding.pry
     if teacher_logged_in?
       @course = Course.find_by_id(params[:course_id])
-      @grades = @course.grades.order(created_at: "desc").paginate(page: params[:page], per_page: 4)
+      @grades = @course.grades.order(created_at: "desc").paginate(page: params[:page], per_page: 6)
     elsif student_logged_in?
       @grades=current_user.grades.paginate(page: params[:page], per_page: 4)
     else

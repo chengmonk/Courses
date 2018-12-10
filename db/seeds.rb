@@ -47,7 +47,8 @@ User.create(
     department: "计算机与控制学院",
     password: "password",
     password_confirmation: "password",
-    admin: true
+    admin: true,
+    active: true
 )
 course_map={
   1 => {course_code: "011D9032Z﹡", name: "特征列方法引论", course_type: "其它", credit: "40/2.0", limit_num: "18", course_week: "第2-21周", course_time: "周二(5-6)", class_room: "N306", teaching_type: "课堂讲授为主", exam_type: "课堂开卷", department: "数学学院"},
@@ -2406,7 +2407,8 @@ teacher_map.keys.each do |index|
       department: teacher_map[index][:department],
       password: "password",
       password_confirmation: "password",
-      teacher: true
+      teacher: true,
+      active: true
   )
 
   teacher.teaching_courses.create!(
@@ -2425,20 +2427,21 @@ teacher_map.keys.each do |index|
 
 end
 
-#(1..200).each do |index|
-#   student=User.create!(
-#       name: StudentGenerator.name,
-#       email: "student#{index}@test.com",
-#       num: "2016#{Faker::Number.number(11)}",
-#       major: StudentGenerator.major,
-#       department: StudentGenerator.department,
-#       password: "password",
-#       password_confirmation: "password",
-#   )
+(1..10).each do |index|
+  student=User.create!(
+      name: StudentGenerator.name,
+      email: "student#{index}@test.com",
+      num: "2016#{Faker::Number.number(11)}",
+      major: StudentGenerator.major,
+      department: StudentGenerator.department,
+      password: "password",
+      password_confirmation: "password",
+      active: true
+  )
 
-#   course_array=(1..34).to_a.sort { rand() - 0.5 }[1..rand(4..8)]
-#   course_array.each do |index|
-#     student.courses<<Course.find(index)
-#   end
+  course_array=(1..34).to_a.sort { rand() - 0.5 }[1..rand(4..8)]
+  course_array.each do |index|
+    student.courses<<Course.find(index)
+  end
 
-# end
+end
