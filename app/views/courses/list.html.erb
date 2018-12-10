@@ -16,13 +16,13 @@
      
           <%= form_tag({}, {:method => :get}) do %>
             <%= label_tag "Department:" %>
-            <%= select_tag :department, options_for_select(@op_depts), multiple: true %>
+            <%= select_tag :department, options_for_select(@op_depts, :selected=>params[:department]), multiple: true %>
 
             <%= label_tag "course type:" %>
-            <%= select_tag :type, options_for_select(@op_courses_type), multiple: true%>
+            <%= select_tag :type, options_for_select(@op_courses_type, :selected=>params[:type]), multiple: true%>
             
             <%= label_tag "course time:" %>
-            <%= select_tag :time, options_for_select(@op_times), include_blank: "All " %>
+            <%= select_tag :time, options_for_select(@op_times, :selected=>params[:time]), include_blank: "All " %>
             
             <%= label_tag "course name:" %>
             <%= text_field_tag :name %>
