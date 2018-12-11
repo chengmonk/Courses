@@ -123,25 +123,19 @@ class CoursesController < ApplicationController
       end
       flash = {:suceess => "成功选择课程: #{@select_course.name}"}
     end
+    redirect_to :back, flash: flash
   end
 
-
+  
   def set_degree
-    @grade = Grade.find_by_id(params[:id])
-    if @grade.update(degree: true)
-      flash = {:info => "设置成功"}
-    else
-      flash = {:warning => "设置失败"}
-    end
-    # redirect_to courses_path, flash: flash
-  end
-
-  # def select
-  #   @course=Course.find_by_id(params[:id])
-  #   current_user.courses<<@course
-  #   flash={:suceess => "成功选择课程: #{@course.name}"}
+  #   @grade = Grade.find_by_course_id(params[:id]).
+  #   if @grade.update(degree: true)
+  #     flash = {:info => "设置成功"}
+  #   else
+  #     flash = {:warning => "设置失败"}
+  #   end
   #   redirect_to courses_path, flash: flash
-  # end
+  end
 
   def quit
     @course = Course.find_by_id(params[:id])
@@ -186,6 +180,4 @@ class CoursesController < ApplicationController
     params.require(:course).permit(:course_code, :name, :course_type, :teaching_type, :exam_type,
                                    :credit, :limit_num, :class_room, :course_time, :course_week)
   end
-
-
 end
