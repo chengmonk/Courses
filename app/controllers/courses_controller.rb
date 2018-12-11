@@ -123,12 +123,17 @@ class CoursesController < ApplicationController
       end
       flash = {:suceess => "成功选择课程: #{@select_course.name}"}
     end
-        
-    redirect_to :back, flash: flash
-    @course = Course.find_by_id(params[:id])
-    current_user.courses << @course
-    flash = {:suceess => "成功选择课程: #{@course.name}"}
-    redirect_to courses_path, flash: flash
+  end
+
+
+  def set_degree
+    @grade = Grade.find_by_id(params[:id])
+    if @grade.update(degree: true)
+      flash = {:info => "设置成功"}
+    else
+      flash = {:warning => "设置失败"}
+    end
+    # redirect_to courses_path, flash: flash
   end
 
   # def select

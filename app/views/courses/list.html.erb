@@ -42,6 +42,7 @@
               <th>课程编号</th>
               <th>课程名称</th>
               <th>上课时间</th>
+              <th>周次</th>
               <th>课时/学分</th>
               <th>限选</th>
               <th>已选</th>
@@ -60,6 +61,7 @@
                   <td><%= course.course_code %></td>
                   <td style="width: 100px;"><%= course.name %></td>
                   <td><%= course.course_time%> </td>
+                  <td><%= course.course_week%> </td>
                   <td><%= course.credit %></td>
                   <td><%= course.limit_num %></td>
                   <td><%= course.student_num %></td>
@@ -73,7 +75,7 @@
                     <%= form_tag("/select", :method => :get) do %>
                     <%= hidden_field_tag(:id, course.id) %>
                     <%= check_box_tag(:degree, "true") %> 
-                    <%= button_tag "加入课程" %> 
+                    <%= button_tag "加入课程"  %> 
                     <% end %>  
                   </td>
                 </tr>

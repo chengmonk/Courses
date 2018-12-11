@@ -9,16 +9,17 @@ class GradesController < ApplicationController
     else
       flash = {:danger => "上传失败.请重试"}
     end
-    redirect_to grades_path(course_id: params[:course_id]), flash: flash
+    redirect_to :back, flash: flash
+    # redirect_to grades_path(course_id: params[:course_id]), flash: flash
   end
 
   def index
     #binding.pry
     if teacher_logged_in?
       @course = Course.find_by_id(params[:course_id])
-      @grades = @course.grades.order(created_at: "desc").paginate(page: params[:page], per_page: 6)
+      @grades = @course.grades.order(created_at: "desc").paginate(page: params[:page], per_page: 2)
     elsif student_logged_in?
-      @grades = current_user.grades.paginate(page: params[:page], per_page: 4)
+      @grades = current_user.grades.paginate(page: params[:page], per_page: 2)
     else
       redirect_to root_path, flash: {:warning => "请先登陆"}
     end
