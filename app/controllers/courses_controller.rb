@@ -76,7 +76,7 @@ class CoursesController < ApplicationController
     @op_times = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
     @op_depts = Course.select(:department).distinct.collect {|p| [p.department]}
     @courses = Course.all
-
+    @semester = integrated_semester(Course.last.semester)
 
     # modify query method
 
@@ -163,6 +163,14 @@ class CoursesController < ApplicationController
       @course = current_user.courses.paginate(page: params[:page], per_page: 6) 
       @grades = current_user.grades
     end
+  end
+
+  def integrated_semester(old_semester)
+    hash_term = {"1" => "（秋季）第一学期", "2" => "（春季）第二学期", "3" => "（夏季）第三学期"}
+    year_term = old_semester.split(/-/)
+    year = year_term[0] + "-" + (year_term[0].to_i + 1).to_s + "学年"
+    term = hash_term[year_term[1]]
+    int_semester = year + term
   end
 
 

@@ -16,7 +16,13 @@
         </div>
 
         <div class="panel-body">
-          <table class="table table-responsive table-condensed table-hover">
+          <% if (student_logged_in? and @course.count == 0)%>
+          <div>
+            <h1>课表为空!</h1>
+            <h4>还没选课？<%= link_to "点击此处,立即选课!", list_courses_path %></h4>
+          </div>
+          <% else %>
+            <table class="table table-responsive table-condensed table-hover">
             <thead>
             <tr>
               <th>课程编号</th>
@@ -58,6 +64,7 @@
             </tbody>
           </table>
           <%= will_paginate @course %>
+        <% end %>
         </div>
       </div>
     </div>
