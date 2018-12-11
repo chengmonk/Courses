@@ -56,7 +56,11 @@
                     <td><%= grade.course.teacher.name %></td>
                   <% end %>
                   <td><%= grade.course.credit %></td>
-                  <td><%= grade.degree %></td>
+                  <% if grade.degree?%>
+                    <td>是</td>
+                  <% else %>
+                    <td>否</td>
+                  <% end %>
                   <td><%= grade.grade %></td>
                   
                   <% if teacher_logged_in? %>

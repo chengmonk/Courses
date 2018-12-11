@@ -95,7 +95,7 @@ class CoursesController < ApplicationController
     if params[:name] != ""
       @courses = @courses.where('name like :str', str: "%#{params[:name]}%")
     end
-    @courses = @courses.paginate(page: params[:page], per_page: 4)
+    @courses = @courses.paginate(page: params[:page], per_page: 6)
 
     @remind_str = params[:department].to_s + "  " + params[:type].to_s + "  "  + params[:time].to_s + "  "  +  params[:name].to_s
 
@@ -110,9 +110,9 @@ class CoursesController < ApplicationController
     @exit_course_id = @courses.find_by_id(params[:id])
     # @exit_course_time = @courses.find_by_course_time(params[:course_time])
     if @select_course[:student_num] >= @select_course[:limit_num]
-      flash = {:error => "Over numbers!: #{@select_course.name}"}
+      flash = {:warning => "Over numbers!: #{@select_course.name}"}
     elsif @exit_course_id
-      flash = {:error => "Already selected!: #{@exit_course_id.name}"}
+      flash = {:warning => "您的课表中已存在:#{@exit_course_id.name}，请选择其他课程！"}
     # elsif @exit_course_time#need to modify later
     #   flash = {:error => "Time conflict!: #{@exit_course_time.name}"}
     else
@@ -121,20 +121,30 @@ class CoursesController < ApplicationController
         @grade = current_user.grades.find_by(course_id: params[:id])
         @grade.update(degree: true)
       end
-      flash = {:suceess => "成功选择课程: #{@select_course.name}"}
+      flash = {:info => "成功选择课程: #{@select_course.name}"}
     end
     redirect_to :back, flash: flash
   end
 
-  
+
   def set_degree
-  #   @grade = Grade.find_by_course_id(params[:id]).
-  #   if @grade.update(degree: true)
-  #     flash = {:info => "设置成功"}
-  #   else
-  #     flash = {:warning => "设置失败"}
-  #   end
-  #   redirect_to courses_path, flash: flash
+    @grade = current_user.grades.find_by_course_id(params[:id])
+    if @grade.update(degree: true)
+      flash = {:info => "设置成功"}
+    else
+      flash = {:warning => "设置失败"}
+    end
+    redirect_to :back, flash: flash
+  end
+
+  def cancel_degree
+    @grade = current_user.grades.find_by_course_id(params[:id])
+    if @grade.update(degree: false)
+      flash = {:info => "取消成功"}
+    else
+      flash = {:warning => "取消失败"}
+    end
+    redirect_to :back, flash: flash
   end
 
   def quit
@@ -148,8 +158,11 @@ class CoursesController < ApplicationController
   #-------------------------for both teachers and students----------------------
 
   def index
-    @course = current_user.teaching_courses.paginate(page: params[:page], per_page: 4) if teacher_logged_in?
-    @course = current_user.courses.paginate(page: params[:page], per_page: 4) if student_logged_in?
+    @course = current_user.teaching_courses.paginate(page: params[:page], per_page: 6) if teacher_logged_in?
+    if student_logged_in?
+      @course = current_user.courses.paginate(page: params[:page], per_page: 6) 
+      @grades = current_user.grades
+    end
   end
 
 
