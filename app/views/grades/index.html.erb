@@ -15,15 +15,17 @@
      
           <%= form_tag({}, {:method => :get}) do %>
             <%= label_tag "学年-学期:" %>
-            <%= select_tag :year_time, options_for_select(@semesters, :selected=>params[:year_time]), include_blank: "All " %>
+            <%= select_tag :year_term, options_for_select(@semesters, :selected=>params[:year_term]), include_blank: "All " %>
             <%= button_tag "query" %>
           <% end %>
           <div>
           <table class="table table-striped table-hover">
             <div>
-              <h3 align="center">UCAS 2018-2019 (autumn) GRADES</h3>
-              <h5>name:</h5>
-              <h5>number:</h5>
+              <h3 align="center"><%= @semester_str %></h3>
+              <h5>姓名:<%= current_user.name %></h5>
+              <h5>学号:<%= current_user.num %></h5>
+              <h5>专业:<%= current_user.major %></h5>
+              <h5>培养单位:<%= current_user.department %></h5>
             </div>
             <thead>
 
@@ -37,10 +39,10 @@
               <%if student_logged_in? %>
                 <th>课程编号</th>
                 <th>课程名称</th>
-                <th>授课老师</th>
               <% end %>
               <th>课时/学分</th>
               <th>是否学位课</th>
+              <th>学期</th>
               <th>成绩</th>
 
             </tr>
@@ -58,7 +60,6 @@
                   <% if student_logged_in? %>
                     <td><%= grade.course.course_code %></td>
                     <td><%= grade.course.name %></td>
-                    <td><%= grade.course.teacher.name %></td>
                   <% end %>
                   <td><%= grade.course.credit %></td>
                   <% if grade.degree?%>
@@ -66,6 +67,7 @@
                   <% else %>
                     <td>否</td>
                   <% end %>
+                  <td><%= integrated_semester(grade.course.semester) %></td>
                   <td><%= grade.grade %></td>
                   
                   <% if teacher_logged_in? %>
@@ -80,7 +82,7 @@
             <% end %>
             </tbody>
           </table>
-          <%= will_paginate @grades %>
+         
         </div>
       </div>
     </div>
