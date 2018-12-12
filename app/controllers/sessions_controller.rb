@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
       else
         user.token = SecureRandom.urlsafe_base64
         if user.save
-          UserMailer.account_activation(user).deliver
+          UserMailer.account_activation(user).deliver_now
           flash = {danger: '账号未激活，激活邮件已经发送至注册邮箱，请查阅邮件，先将账号激活！'}
         end
       end
