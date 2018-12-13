@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7b1c0f9-5303-4042-90a5-05cecbda0e94" name="Default" comment="公布成绩，邮件推送给学生。">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/rails_admin.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/rails_admin.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/.last_run.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/.last_run.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/.resultset.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/.resultset.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-    </list>
+    <list default="true" id="d7b1c0f9-5303-4042-90a5-05cecbda0e94" name="Default" comment="添加systeminfo模型，增加选课时间控制" />
     <ignored path="vim.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -101,20 +92,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+            <state relative-caret-position="315">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+            <state relative-caret-position="300">
+              <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -218,8 +209,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="226" />
-    <option name="y" value="69" />
+    <option name="x" value="100" />
+    <option name="y" value="95" />
     <option name="width" value="1283" />
     <option name="height" value="897" />
   </component>
@@ -363,7 +354,7 @@
       <workItem from="1544581925497" duration="3024000" />
       <workItem from="1544606990352" duration="23000" />
       <workItem from="1544607109230" duration="178000" />
-      <workItem from="1544623173215" duration="231000" />
+      <workItem from="1544623173215" duration="874000" />
     </task>
     <task id="LOCAL-00001" summary="nothing">
       <created>1542783138548</created>
@@ -393,11 +384,18 @@
       <option name="project" value="LOCAL" />
       <updated>1544520860414</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="添加systeminfo模型，增加选课时间控制">
+      <created>1544623479127</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1544623479127</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21133000" />
+    <option name="totallyTimeSpent" value="21776000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -409,15 +407,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="226" y="69" width="1283" height="897" extended-state="0" />
-    <editor active="true" />
+    <frame x="226" y="80" width="1283" height="897" extended-state="0" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.5141243" side_tool="true" weight="0.3513732" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4858757" visible="true" weight="0.16760677" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4858757" visible="true" weight="0.16760677" />
       <window_info id="Structure" order="2" weight="0.24973376" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5229654" side_tool="true" weight="0.23447402" />
       <window_info anchor="bottom" id="Version Control" order="1" sideWeight="0.49873632" weight="0.326062" />
-      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.47703466" visible="true" weight="0.23447402" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" sideWeight="0.47703466" visible="true" weight="0.23447402" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.3287483" />
       <window_info anchor="bottom" id="Run" order="5" sideWeight="0.4859585" weight="0.32572615" />
@@ -499,7 +496,8 @@
     <MESSAGE value="nothing" />
     <MESSAGE value="邮件激活，重置密码完成。" />
     <MESSAGE value="公布成绩，邮件推送给学生。" />
-    <option name="LAST_COMMIT_MESSAGE" value="公布成绩，邮件推送给学生。" />
+    <MESSAGE value="添加systeminfo模型，增加选课时间控制" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加systeminfo模型，增加选课时间控制" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -774,17 +772,17 @@
     <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        <state relative-caret-position="300">
+          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
