@@ -34,6 +34,7 @@ Rails.application.routes.draw do
       get :open
       get :close
       get :set_degree
+      get :cancel_degree
     end
     collection do
       get :list

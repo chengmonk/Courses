@@ -1,4 +1,5 @@
 class GradesController < ApplicationController
+  include ConvertSemesterHelper
 
   before_action :teacher_logged_in, only: [:update]
 
@@ -16,11 +17,26 @@ class GradesController < ApplicationController
 
   def index
     #binding.pry
+    @semesters = Course.select(:semester).distinct.collect {|p| [integrated_semester(p.semester), p.semester]}
+    @semester_str = "UCAS在读期间全部成绩"
+
     if teacher_logged_in?
       @course = Course.find_by_id(params[:course_id])
-      @grades = @course.grades.order(created_at: "desc").paginate(page: params[:page], per_page: 2)
+      @grades = @course.grades.order(created_at: "desc").paginate(page: params[:page], per_page: 6)
+      
     elsif student_logged_in?
-      @grades = current_user.grades.paginate(page: params[:page], per_page: 2)
+      @grades = current_user.grades
+      if (params[:year_term] !="" and params[:year_term]) 
+        @semester_str = integrated_semester(params[:year_term])
+        @temp = []
+        @grades.each do |grade|
+          if grade.course.semester == params[:year_term]
+            @temp << grade
+          end
+        end
+        @grades = @temp
+      end
+      
     else
       redirect_to root_path, flash: {:warning => "请先登陆"}
     end
@@ -35,5 +51,4 @@ class GradesController < ApplicationController
       redirect_to root_url, flash: {danger: '请登陆'}
     end
   end
-
 end
