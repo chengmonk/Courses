@@ -24,7 +24,7 @@
             <li class="list-group-item">
               <%= link_to courses_path do %>
                   <span class="glyphicon glyphicon-chevron-right"></span> 已授课程
-                  <span class="label label-info pull-right"><%= current_user.teaching_courses.count %></span>
+                  <span class="label label-info pull-right"><%= current_user.teaching_courses.where(:semester => Systeminfo.first.semester).count %></span>
               <% end %>
             </li>
             <li class="list-group-item">
@@ -38,13 +38,13 @@
             <li class="list-group-item">
               <%= link_to list_courses_path do %>
                   <span class="glyphicon glyphicon-chevron-right"></span> 选修课程
-                  <span class="label label-info pull-right"><%= Course.all.count %></span>
+                  <span class="label label-info pull-right"><%= Course.where(:semester => Systeminfo.first.semester).count %></span>
               <% end %>
             </li>
             <li class="list-group-item">
               <%= link_to courses_path do %>
                   <span class="glyphicon glyphicon-chevron-right"></span> 已选课程
-                  <span class="label label-info pull-right"><%= current_user.courses.count %></span>
+                  <span class="label label-info pull-right"><%= current_user.courses.where(:semester => Systeminfo.first.semester).count %></span>
               <% end %>
             </li>
         <% end %>
@@ -72,7 +72,7 @@
       <div class="list-group">
 
         <% if teacher_logged_in? %>
-            <% current_user.teaching_courses.each do |course| %>
+            <% current_user.teaching_courses.where(:semester => Systeminfo.first.semester).each do |course| %>
                 <li class="list-group-item">
                   <%= link_to grades_path(course_id: course.id), :method => :get do %>
                       <span class="glyphicon glyphicon-chevron-right"></span> <%= course.name %>

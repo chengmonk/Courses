@@ -1,19 +1,23 @@
 class CoursesController < ApplicationController
 
-  include ConvertSemesterHelper
+  include CourseHelper
 
-  before_action :student_logged_in, only: [:select, :quit, :list]
-  before_action :teacher_logged_in, only: [:new, :create, :edit, :destroy, :update, :open, :close] #add open by qiao
+  before_action :systeminfo_exit, only: [:index, :update]
+
+  before_action :student_logged_in, :is_open_student, only: [:select, :quit, :list, :set_degree, :cancel_degree]
+  before_action :teacher_logged_in, :is_open_teacher, only: [:new, :create, :edit, :destroy, :update, :open, :close] #add open by qiao
   before_action :logged_in, only: :index
 
   #-------------------------for teachers----------------------
 
   def new
+    @semester_value = Systeminfo.last.semester
     @course = Course.new
   end
 
   def create
-    @course = Course.new(course_params)
+
+    @course = Course.new(course_params)    
     if @course.save
       current_user.teaching_courses << @course
       redirect_to courses_path, flash: {success: "新课程申请成功"}
@@ -73,13 +77,14 @@ class CoursesController < ApplicationController
   # end
 
   def list
+    @sys = Systeminfo.first
+    @year_term = integrated_semester(@sys.semester)
 
     @op_courses_type = Course.select(:course_type).distinct.collect {|p| [p.course_type]}
     @op_times = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
     @op_depts = Course.select(:department).distinct.collect {|p| [p.department]}
-    @courses = Course.all
-
-    # modify query method
+    @courses = Course.where(:semester => @sys.semester)
+      # modify query method
 
     if params[:department] != ""
       @courses = @courses.where(:department => params[:department])
@@ -96,9 +101,12 @@ class CoursesController < ApplicationController
     if params[:name] != ""
       @courses = @courses.where('name like :str', str: "%#{params[:name]}%")
     end
-    @courses = @courses.paginate(page: params[:page], per_page: 6)
+    @courses = @courses.order(:course_code).paginate(page: params[:page], per_page: 6)
 
     @remind_str = params[:department].to_s + "  " + params[:type].to_s + "  "  + params[:time].to_s + "  "  +  params[:name].to_s
+    
+  
+    
 
   end
 
@@ -122,6 +130,7 @@ class CoursesController < ApplicationController
         @grade = current_user.grades.find_by(course_id: params[:id])
         @grade.update(degree: true)
       end
+      @select_course.update(student_num: @select_course.student_num + 1)
       flash = {:info => "成功选择课程: #{@select_course.name}"}
     end
     redirect_to :back, flash: flash
@@ -151,6 +160,7 @@ class CoursesController < ApplicationController
   def quit
     @course = Course.find_by_id(params[:id])
     current_user.courses.delete(@course)
+    @course.update(student_num: @course.student_num - 1)
     flash = {:success => "成功退选课程: #{@course.name}"}
     redirect_to courses_path, flash: flash
   end
@@ -159,15 +169,39 @@ class CoursesController < ApplicationController
   #-------------------------for both teachers and students----------------------
 
   def index
-    @course = current_user.teaching_courses.paginate(page: params[:page], per_page: 6) if teacher_logged_in?
+
+    @sys_current = Systeminfo.first
+    @semester_current = @sys_current.semester
+    @year_term_current = integrated_semester(@semester_current)
+    if teacher_logged_in?
+      @sys_next = Systeminfo.last
+      @semester_next = @sys_next.semester
+      @year_term_next = integrated_semester(@semester_next)
+
+      @course_next = current_user.teaching_courses.where(:semester => @semester_next).paginate(page: params[:page], per_page: 6)
+      @course_current = current_user.teaching_courses.where(:semester => @semester_current).paginate(page: params[:page], per_page: 6)
+    end
     if student_logged_in?
-      @course = current_user.courses.paginate(page: params[:page], per_page: 6) 
+      @course_current = current_user.courses.where(:semester => @semester_current ).paginate(page: params[:page], per_page: 6) 
       @grades = current_user.grades
     end
   end
 
 
   private
+
+  def is_open_student
+    unless is_open_student?
+      redirect_to courses_path, flash: {danger: '选课系统未开放!'}
+    end
+  end
+
+  def is_open_teacher
+    unless is_open_teacher?
+      redirect_to courses_path, flash: {danger: '增课系统未开放!'}
+    end
+  end
+
 
   # Confirms a student logged-in user.
   def student_logged_in
@@ -190,8 +224,15 @@ class CoursesController < ApplicationController
     end
   end
 
+  def systeminfo_exit
+    unless systeminfo_exit?
+      redirect_to root_url, flash: {danger: '系统信息错误!'}
+    end
+  end
+
   def course_params
     params.require(:course).permit(:course_code, :name, :course_type, :teaching_type, :exam_type,
-                                   :credit, :limit_num, :class_room, :course_time, :course_week)
+                                   :credit, :limit_num, :class_room, :course_time, :course_week,
+                                   :semester, :department)
   end
 end

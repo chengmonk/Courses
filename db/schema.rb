@@ -29,37 +29,31 @@ ActiveRecord::Schema.define(version: 20181213142930) do
     t.string   "course_time"
     t.string   "course_week"
     t.integer  "teacher_id"
-    t.datetime "created_at",                    null: false
-    t.datetime "updated_at",                    null: false
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
     t.boolean  "open",          default: false
     t.string   "department"
-    t.string   "semester"
+    t.string   "semester",      default: "2018-1"
   end
 
   create_table "grades", force: :cascade do |t|
     t.integer  "course_id"
     t.integer  "user_id"
     t.integer  "grade"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.boolean  "degree"
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+    t.boolean  "degree",     default: false, null: false
   end
 
   add_index "grades", ["course_id"], name: "index_grades_on_course_id", using: :btree
   add_index "grades", ["user_id"], name: "index_grades_on_user_id", using: :btree
 
-  create_table "semesters", force: :cascade do |t|
-    t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "systeminfos", force: :cascade do |t|
-    t.string   "semester"
-    t.datetime "cs_start"
-    t.datetime "cs_end"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "semester",   default: "2018-1",              null: false
+    t.datetime "cs_start",   default: '2018-12-14 12:33:15', null: false
+    t.datetime "cs_end",     default: '2018-12-14 12:33:15', null: false
+    t.datetime "created_at",                                 null: false
+    t.datetime "updated_at",                                 null: false
     t.boolean  "teacher"
   end
 
