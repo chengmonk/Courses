@@ -2398,7 +2398,19 @@ teacher_map={
   1171 => {name: " 樊菁 ", department: "体育学院"}
 }
 
+systeminfo_map={
+    1 => {semester: "2018-1",cs_start: "2018-1-14 15:09:50",cs_end: "2019-12-14 15:09:50",teacher: false},
+    2 => {semester: "2018-1",cs_start: "2018-1-14 15:09:50",cs_end: "2019-12-14 15:09:50",teacher: true}
+}
 
+systeminfo_map.keys.each do |index|
+  systeminfo=Systeminfo.create!(
+      semester: systeminfo_map[index][:semester],
+      cs_start: systeminfo_map[index][:cs_start],
+      cs_end: systeminfo_map[index][:cs_end],
+      teacher: systeminfo_map[index][:teacher]
+  )
+end
 
 teacher_map.keys.each do |index|
   teacher=User.create!(

@@ -14,12 +14,14 @@ createuser username -P
 createdb courseselect_development -O chengmonk -E UTF8 -e;
 courseselect_development
 courseselect_test
+
+DROP DATABASE courseselect_development;
 连接数据库
 psql -U username -d dbname -h 127.0.0.1
 
 PostgreSQL 数据库操作
 显示已创建的数据库：
-\l  
+\l
 
 在不连接进 PostgreSQL 数据库的情况下，也可以在终端上查看显示已创建的列表：
 psql -l

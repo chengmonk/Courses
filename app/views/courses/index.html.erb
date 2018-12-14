@@ -48,7 +48,7 @@
                   <td><%= course.name %></td>
                   <td><%= course.credit %></td>
                   <td><%= course.exam_type %></td>
-                  <td><%= course.teacher&.name %></td>
+                  <td><%= course.teacher.name %></td>
 
                   <% if teacher_logged_in? %>
                     <td><%= course.course_week %></td>
@@ -105,7 +105,7 @@
                   <td><%= course.name %></td>
                   <td><%= course.credit %></td>
                   <td><%= course.exam_type %></td>
-                  <td><%= course.teacher&.name %></td>
+                  <td><%= course.teacher.name %></td>
 
                   <td><%= course.course_week %></td>
                   <td><%= course.course_time %></td>
