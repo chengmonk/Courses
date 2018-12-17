@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7b1c0f9-5303-4042-90a5-05cecbda0e94" name="Default" comment="添加systeminfo模型，增加选课时间控制">
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
     </list>
     <ignored path="vim.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -100,30 +100,35 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/heroku操作命令">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
+        <entry file="file://$PROJECT_DIR$/Gemfile.lock">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+            <state relative-caret-position="193">
+              <caret line="281" column="15" selection-start-line="281" selection-start-column="15" selection-end-line="281" selection-end-column="15" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.ru">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>spec</find>
       <find>admin</find>
       <find>26ae913028bb49ac425167d0ec467bdaf72a3dae</find>
+      <find>spec</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -138,7 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/views/courses/_sidenav.html.erb" />
         <option value="$PROJECT_DIR$/app/views/courses/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/grades/upload.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
@@ -189,6 +193,7 @@
         <option value="$PROJECT_DIR$/app/models/course.rb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/Gemfile.lock" />
       </list>
     </option>
   </component>
@@ -221,7 +226,6 @@
     </navigator>
     <panes>
       <pane id="RailsProjectView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -290,6 +294,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -434,7 +439,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30361000" />
+    <option name="totallyTimeSpent" value="30410000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -450,11 +455,11 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.5141243" side_tool="true" weight="0.3513732" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4858757" visible="true" weight="0.186946" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4858757" visible="true" weight="0.186946" />
       <window_info id="Structure" order="2" weight="0.24973376" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5229654" side_tool="true" weight="0.23447402" />
       <window_info anchor="bottom" id="Version Control" order="1" sideWeight="0.49873632" weight="0.32572877" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="2" sideWeight="0.47703466" visible="true" weight="0.23447402" />
+      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.47703466" visible="true" weight="0.23447402" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.3287483" />
       <window_info anchor="bottom" id="Run" order="5" sideWeight="0.4859585" weight="0.32572615" />
@@ -537,7 +542,8 @@
     <MESSAGE value="邮件激活，重置密码完成。" />
     <MESSAGE value="公布成绩，邮件推送给学生。" />
     <MESSAGE value="添加systeminfo模型，增加选课时间控制" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加systeminfo模型，增加选课时间控制" />
+    <MESSAGE value="Revert &quot;respec 3 d&quot;&#10;&#10;This reverts commit 4b6d7db1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;respec 3 d&quot;&#10;&#10;This reverts commit 4b6d7db1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -829,8 +835,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
