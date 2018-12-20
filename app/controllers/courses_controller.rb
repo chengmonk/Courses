@@ -145,7 +145,7 @@ class CoursesController < ApplicationController
   def quit
     @course = Course.find_by_id(params[:id])
     current_user.courses.delete(@course)
-    @course.update(student_num: @course.student_num + 1)
+    @course.update(student_num: @course.student_num - 1)
     flash = {:success => "成功退选课程: #{@course.name}"}
     redirect_to courses_path, flash: flash
   end
