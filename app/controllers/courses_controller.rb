@@ -112,7 +112,6 @@ class CoursesController < ApplicationController
 
 
   def select
-
     # time error
     @select_course = Course.find_by_id(params[:id])
     @courses = current_user.courses
@@ -133,7 +132,7 @@ class CoursesController < ApplicationController
       @select_course.update(student_num: @select_course.student_num + 1)
       flash = {:info => "成功选择课程: #{@select_course.name}"}
     end
-    redirect_to :back, flash: flash
+    redirect_to courses_path, flash: flash
   end
 
 

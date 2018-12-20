@@ -5,7 +5,11 @@ czj:
   major: 计算机应用技术
   department: 信息工程研究所
   password_digest: <%= User.digest('password') %>
-
+michael:
+  name: 彭兆卿
+  email: student1@test.com
+  admin: true
+  password_digest: <%= User.digest('password') %>
 teacherluo:
   name: 罗铁坚
   email: teacher4@test.com

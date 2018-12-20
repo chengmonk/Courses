@@ -2,7 +2,7 @@ require 'test_helper'
 
 class UserEditTestTest < ActionDispatch::IntegrationTest
   def setup
-    @user = users(:michael)
+    @user = users(:czj)
   end
 
   # test "unsuccessful edit" do
@@ -15,7 +15,7 @@ class UserEditTestTest < ActionDispatch::IntegrationTest
   #                                            password_confirmation: "bar" } })
   #   assert_redirected_to root_url
   # end
-
+  #
   # test "successful edit with friendly forwarding" do
   #   log_in_as(@user)
   #   get edit_user_path(@user)
