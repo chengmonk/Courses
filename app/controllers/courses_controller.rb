@@ -63,18 +63,6 @@ class CoursesController < ApplicationController
 
   #-------------------------for students----------------------
 
-  # def list
-  #   #-------QiaoCode--------
-  #   @courses = Course.where(:open=>true).paginate(page: params[:page], per_page: 4)
-  #   @course = @courses-current_user.courses
-  #   tmp=[]
-  #   @course.each do |course|
-  #     if course.open==true
-  #       tmp<<course
-  #     end
-  #   end
-  #   @course=tmp
-  # end
 
   def list
     @sys = Systeminfo.first
@@ -86,19 +74,19 @@ class CoursesController < ApplicationController
     @courses = Course.where(:semester => @sys.semester)
       # modify query method
 
-    if params[:department] != ""
+    if params[:department] != "" and !params[:department].nil?
       @courses = @courses.where(:department => params[:department])
     end
 
-    if params[:type] != ""
+    if params[:type] != "" and !params[:type].nil?
       @courses = @courses.where(:course_type => params[:type])
     end
     
-    if params[:time] != ""
+    if params[:time] != "" and !params[:time].nil?
       @courses = @courses.where('course_time like :str', str: "%#{params[:time]}%")
     end
 
-    if params[:name] != ""
+    if params[:name] != "" and !params[:name].nil?
       @courses = @courses.where('name like :str', str: "%#{params[:name]}%")
     end
     @courses = @courses.order(:course_code).paginate(page: params[:page], per_page: 6)
@@ -113,25 +101,22 @@ class CoursesController < ApplicationController
 
   def select
 
-    # time error
-    @select_course = Course.find_by_id(params[:id])
-    @courses = current_user.courses
-    @exit_course_id = @courses.find_by_id(params[:id])
-    # @exit_course_time = @courses.find_by_course_time(params[:course_time])
-    if @select_course[:student_num] >= @select_course[:limit_num]
-      flash = {:warning => "Over numbers!: #{@select_course.name}"}
-    elsif @exit_course_id
-      flash = {:warning => "您的课表中已存在:#{@exit_course_id.name}，请选择其他课程！"}
-    # elsif @exit_course_time#need to modify later
-    #   flash = {:error => "Time conflict!: #{@exit_course_time.name}"}
+    @wanted_course = Course.find_by_id(params[:id])
+
+    if is_over_number?(@wanted_course)
+      flash = {:warning => "Over numbers!: #{@wanted_course.name}"}
+    elsif is_exit_course?(params[:id])
+      flash = {:warning => "您的课表中已存在:#{@wanted_course.name}，请选择其他课程！"}
+    elsif is_time_conflict?(@wanted_course)#need to modify later
+      flash = {:warning => "课程:#{@wanted_course.name}, 与课表中的课程存在时间冲突!"}
     else
-      current_user.courses << @select_course
+      current_user.courses << @wanted_course
       if params[:degree]
         @grade = current_user.grades.find_by(course_id: params[:id])
         @grade.update(degree: true)
       end
-      @select_course.update(student_num: @select_course.student_num + 1)
-      flash = {:info => "成功选择课程: #{@select_course.name}"}
+      @wanted_course.update(student_num: @wanted_course.student_num + 1)
+      flash = {:info => "成功选择课程: #{@wanted_course.name}"}
     end
     redirect_to :back, flash: flash
   end
@@ -160,7 +145,7 @@ class CoursesController < ApplicationController
   def quit
     @course = Course.find_by_id(params[:id])
     current_user.courses.delete(@course)
-    @course.update(student_num: @course.student_num - 1)
+    @course.update(student_num: @course.student_num + 1)
     flash = {:success => "成功退选课程: #{@course.name}"}
     redirect_to courses_path, flash: flash
   end
