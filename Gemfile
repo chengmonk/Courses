@@ -1,7 +1,7 @@
 source 'https://gems.ruby-china.com'
 
 gem 'bootstrap-sass', '~> 3.3.7'
-# gem 'rspec', '~> 3.0'
+#gem 'rspec', '~> 3.0'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.11'
 gem 'faker', '~> 1.6.3'

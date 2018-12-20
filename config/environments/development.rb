@@ -38,7 +38,7 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
-
+=begin
   ActionMailer::Base.delivery_method = :smtp  
   config.action_mailer.perform_deliveries = true  
   config.action_mailer.raise_delivery_errors = true    
@@ -52,4 +52,18 @@ Rails.application.configure do
       :user_name => "Course_iie",  #邮件用户名，如xxx@yeah.net用户名就是xxx
       :password => "Ssys821",  #与登录密码不同，此处是客户端授权密码，切记！
   }
+=end
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.default :charset => 'utf-8'
+  config.action_mailer.default_url_options = {host: 'csiie.herokuapp.com', port: 8000}
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+      address:              'smtp.163.com',
+      port:                 25,
+      # domain:             '163.com',
+      user_name:           'Course_iie@163.com',
+      password:             'Ssys821',
+      authentication:       :plain,
+      enable_starttls_auto: true  }
 end
