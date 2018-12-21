@@ -3,43 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d7b1c0f9-5303-4042-90a5-05cecbda0e94" name="Default" comment="添加systeminfo模型，增加选课时间控制">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/courses_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/courses_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/homes_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/homes_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/user_mailer_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/user_mailer_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/.last_run.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/.resultset.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/.resultset.json.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/application.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/application.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/colorbox/border.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/colorbox/controls.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/colorbox/loading.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/colorbox/loading_background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/favicon_green.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/favicon_red.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/favicon_yellow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/loading.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/magnify.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/smoothness/images/ui-bg_flat_0_aaaaaa_40x100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/smoothness/images/ui-bg_flat_75_ffffff_40x100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/smoothness/images/ui-bg_glass_55_fbf9ee_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/smoothness/images/ui-bg_glass_65_ffffff_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/smoothness/images/ui-bg_glass_75_dadada_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/smoothness/images/ui-bg_glass_95_fef1ec_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/smoothness/images/ui-icons_222222_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/smoothness/images/ui-icons_2e83ff_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/smoothness/images/ui-icons_454545_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/smoothness/images/ui-icons_888888_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/smoothness/images/ui-icons_cd0a0a_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/grade.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/grade.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/users.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/users.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/mailers/user_mailer_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/mailers/user_mailer_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
     </list>
     <ignored path="vim.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -155,8 +119,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-334">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="265">
+              <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -164,8 +128,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/integration/sessions_test_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="56" column="14" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
+            <state relative-caret-position="251">
+              <caret line="56" column="39" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/coverage/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="63" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/heroku操作命令">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -179,10 +170,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
+            <state relative-caret-position="-138">
               <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
             </state>
           </provider>
@@ -229,7 +220,6 @@
         <option value="$PROJECT_DIR$/app/helpers/sessions_helper.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20181213142930_add_typeto_systeminfo.rb" />
         <option value="$PROJECT_DIR$/数据库操作命令" />
-        <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/app/views/courses/index.html.erb" />
         <option value="$PROJECT_DIR$/app/models/course.rb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
@@ -259,8 +249,9 @@
         <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/test/fixtures/users.yml" />
-        <option value="$PROJECT_DIR$/test/integration/sessions_test_test.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/test/integration/sessions_test_test.rb" />
+        <option value="$PROJECT_DIR$/db/seeds.rb" />
       </list>
     </option>
   </component>
@@ -331,25 +322,12 @@
             <path>
               <item name="vim" type="b2602c69:ProjectViewProjectNode" />
               <item name="courses_select" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="coverage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vim" type="b2602c69:ProjectViewProjectNode" />
               <item name="courses_select" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vim" type="b2602c69:ProjectViewProjectNode" />
-              <item name="courses_select" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="fixtures" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vim" type="b2602c69:ProjectViewProjectNode" />
-              <item name="courses_select" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="integration" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -617,7 +595,7 @@
       <workItem from="1545190530358" duration="102000" />
       <workItem from="1545270450766" duration="6102000" />
       <workItem from="1545285546263" duration="1301000" />
-      <workItem from="1545303825934" duration="15819000" />
+      <workItem from="1545303825934" duration="16358000" />
     </task>
     <task id="LOCAL-00001" summary="nothing">
       <created>1542783138548</created>
@@ -672,21 +650,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Run_test_'SessionsTestTest'__vim - 2018.12.21 at 10h 08m 01s.xml">
-      <configuration name="Run test 'SessionsTestTest': vim" configurationId="TestUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_active_unsuccess__vim - 2018.12.21 at 10h 22m 10s.xml">
-      <configuration name="test_active_unsuccess: vim" configurationId="TestUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_active_unsuccess__vim - 2018.12.21 at 10h 24m 50s.xml">
-      <configuration name="test_active_unsuccess: vim" configurationId="TestUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_active_unsuccess__vim - 2018.12.21 at 10h 28m 51s.xml">
-      <configuration name="test_active_unsuccess: vim" configurationId="TestUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_active_unsuccess__vim - 2018.12.21 at 10h 30m 19s.xml">
-      <configuration name="test_active_unsuccess: vim" configurationId="TestUnitRunConfigurationType" />
-    </history-entry>
     <history-entry file="test_active_unsuccess__vim - 2018.12.21 at 10h 30m 46s.xml">
       <configuration name="test_active_unsuccess: vim" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
@@ -702,9 +665,24 @@
     <history-entry file="test_active_unsuccess__vim - 2018.12.21 at 10h 32m 00s.xml">
       <configuration name="test_active_unsuccess: vim" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="test_active_unsuccess__vim - 2018.12.21 at 10h 33m 54s.xml">
+      <configuration name="test_active_unsuccess: vim" configurationId="TestUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="test_active_unsuccess__vim - 2018.12.21 at 10h 34m 12s.xml">
+      <configuration name="test_active_unsuccess: vim" configurationId="TestUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="test_active_unsuccess__vim - 2018.12.21 at 10h 35m 16s.xml">
+      <configuration name="test_active_unsuccess: vim" configurationId="TestUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="test_password_reset_act_success__vim - 2018.12.21 at 10h 35m 25s.xml">
+      <configuration name="test_password_reset_act_success: vim" configurationId="TestUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Run_test_'SessionsTestTest'__vim - 2018.12.21 at 10h 36m 18s.xml">
+      <configuration name="Run test 'SessionsTestTest': vim" configurationId="TestUnitRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56537000" />
+    <option name="totallyTimeSpent" value="57076000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -720,11 +698,11 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.5141243" side_tool="true" weight="0.3513732" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4858757" visible="true" weight="0.15445666" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4858757" visible="true" weight="0.15445666" />
       <window_info id="Structure" order="2" weight="0.24973376" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5229654" side_tool="true" weight="0.23447402" />
       <window_info anchor="bottom" id="Version Control" order="1" sideWeight="0.49873632" weight="0.32572877" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="2" sideWeight="0.47703466" visible="true" weight="0.3973029" />
+      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.47703466" visible="true" weight="0.3973029" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.3287483" />
       <window_info anchor="bottom" id="Run" order="5" sideWeight="0.4859585" weight="0.28941908" />
@@ -822,13 +800,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.4/gems/activesupport-4.2.8/lib/active_support/testing/declarative.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.4/gems/activesupport-4.2.8/lib/active_support/dependencies.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-477">
@@ -920,13 +891,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/test_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -980,13 +944,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/coverage/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="63" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
         </state>
       </provider>
     </entry>
@@ -1109,24 +1066,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-138">
+          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-334">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="265">
+          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/integration/sessions_test_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="56" column="14" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
+        <state relative-caret-position="251">
+          <caret line="56" column="39" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+    <entry file="file://$PROJECT_DIR$/coverage/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+        <state relative-caret-position="240">
+          <caret line="16" column="63" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heroku操作命令">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
         </state>
       </provider>
     </entry>
