@@ -1,0 +1,7 @@
+login以后
+添加heroku分支：
+heroku git:remote -a csiie
+推送
+git push heroku master
+
+heroku open
