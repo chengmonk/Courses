@@ -1,15 +1,10 @@
 class CoursesController < ApplicationController
-
   include CourseHelper
-
   before_action :systeminfo_exit, only: [:index, :update]
-
   before_action :student_logged_in, :is_open_student, only: [:select, :quit, :list, :set_degree, :cancel_degree]
   before_action :teacher_logged_in, :is_open_teacher, only: [:new, :create, :edit, :destroy, :update, :open, :close] #add open by qiao
   before_action :logged_in, only: :index
-
   #-------------------------for teachers----------------------
-
   def new
     @semester_value = Systeminfo.last.semester
     @course = Course.new
@@ -17,7 +12,7 @@ class CoursesController < ApplicationController
 
   def create
 
-    @course = Course.new(course_params)    
+    @course = Course.new(course_params)
     if @course.save
       current_user.teaching_courses << @course
       redirect_to courses_path, flash: {success: "新课程申请成功"}
@@ -62,8 +57,6 @@ class CoursesController < ApplicationController
   end
 
   #-------------------------for students----------------------
-
-
   def list
     @sys = Systeminfo.first
     @year_term = integrated_semester(@sys.semester)
@@ -72,7 +65,7 @@ class CoursesController < ApplicationController
     @op_times = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
     @op_depts = Course.select(:department).distinct.collect {|p| [p.department]}
     @courses = Course.where(:semester => @sys.semester)
-      # modify query method
+    # modify query method
 
     if params[:department] != "" and !params[:department].nil?
       @courses = @courses.where(:department => params[:department])
@@ -81,7 +74,7 @@ class CoursesController < ApplicationController
     if params[:type] != "" and !params[:type].nil?
       @courses = @courses.where(:course_type => params[:type])
     end
-    
+
     if params[:time] != "" and !params[:time].nil?
       @courses = @courses.where('course_time like :str', str: "%#{params[:time]}%")
     end
@@ -90,14 +83,8 @@ class CoursesController < ApplicationController
       @courses = @courses.where('name like :str', str: "%#{params[:name]}%")
     end
     @courses = @courses.order(:course_code).paginate(page: params[:page], per_page: 6)
-
-    @remind_str = params[:department].to_s + "  " + params[:type].to_s + "  "  + params[:time].to_s + "  "  +  params[:name].to_s
-    
-  
-    
-
+    @remind_str = params[:department].to_s + "  " + params[:type].to_s + "  " + params[:time].to_s + "  " + params[:name].to_s
   end
-
 
   def select
 
@@ -107,7 +94,7 @@ class CoursesController < ApplicationController
       flash = {:warning => "Over numbers!: #{@wanted_course.name}"}
     elsif is_exit_course?(params[:id])
       flash = {:warning => "您的课表中已存在:#{@wanted_course.name}，请选择其他课程！"}
-    elsif is_time_conflict?(@wanted_course)#need to modify later
+    elsif is_time_conflict?(@wanted_course) #need to modify later
       flash = {:warning => "课程:#{@wanted_course.name}, 与课表中的课程存在时间冲突!"}
     else
       current_user.courses << @wanted_course
@@ -120,7 +107,6 @@ class CoursesController < ApplicationController
     end
     redirect_to courses_path, flash: flash
   end
-
 
   def set_degree
     @grade = current_user.grades.find_by_course_id(params[:id])
@@ -167,7 +153,7 @@ class CoursesController < ApplicationController
       @course_current = current_user.teaching_courses.where(:semester => @semester_current).paginate(page: params[:page], per_page: 6)
     end
     if student_logged_in?
-      @course_current = current_user.courses.where(:semester => @semester_current ).paginate(page: params[:page], per_page: 6) 
+      @course_current = current_user.courses.where(:semester => @semester_current).paginate(page: params[:page], per_page: 6)
       @grades = current_user.grades
     end
   end

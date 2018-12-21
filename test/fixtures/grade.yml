@@ -1,5 +1,4 @@
-demo:
-  course_id: 011M1011H
-  user_id: 11
-  grade:  100
-  degree: true
+one:
+  course: one
+  user: czj
+  grade: 60

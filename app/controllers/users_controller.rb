@@ -32,7 +32,6 @@ class UsersController < ApplicationController
   end
 
   def active
-
   end
 
   def edit
