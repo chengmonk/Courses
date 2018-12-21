@@ -67,13 +67,13 @@ class SessionsController < ApplicationController
   end
 
   def send_reset_email
-    mail = email_params[:email].downcase
-    if mail.blank? && mail.empty?
+    mail = email_params[:email]
+    if mail.nil? && mail.blank?
       flash = {danger: '账号不能为空'}
     else
       @user = User.find_by(email: email_params[:email].downcase)
-      @user.token = SecureRandom.urlsafe_base64
       if !@user.nil? && @user.save
+        @user.token = SecureRandom.urlsafe_base64
         UserMailer.password_reset(@user).deliver_now
         flash = {info: "重置密码邮件已发送至 #{mail},请注意查收！"}
       else
@@ -100,9 +100,5 @@ class SessionsController < ApplicationController
 
   def email_params
     params.require(:email).permit(:email)
-  end
-
-  def reset_params
-    params.require(:reset).permit(:email, :password)
   end
 end

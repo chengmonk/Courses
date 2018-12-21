@@ -10,7 +10,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     @user.token = SecureRandom.urlsafe_base64
     if @user.save
-      UserMailer.account_activation(@user).deliver
+      UserMailer.account_activation(@user).deliver_now
       redirect_to root_url, flash: {success: '新账号注册成功,请登陆邮箱进行激活'}
     else
       flash[:warning] = '账号信息填写有误,请重试'

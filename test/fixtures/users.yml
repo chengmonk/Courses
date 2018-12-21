@@ -7,6 +7,15 @@ czj:
   password_digest: <%= User.digest('password') %>
   token: 123
   active: false
+czj2:
+  name: 程子俊
+  email: cheng_monk@163.com
+  num: 201628015017
+  major: 计算机应用技术
+  department: 信息工程研究所
+  password_digest: <%= User.digest('password') %>
+  token: 123
+  active: true
 michael:
   name: 彭兆卿
   email: student1@test.com

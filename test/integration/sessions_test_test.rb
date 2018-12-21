@@ -7,6 +7,7 @@ class SessionsTestTest < ActionDispatch::IntegrationTest
   def setup
     @user = users(:czj)
     @user2 = users(:michael)
+    @user3=users(:czj2)
   end
 
   test "account reset" do
@@ -18,7 +19,15 @@ class SessionsTestTest < ActionDispatch::IntegrationTest
     assert_equal @user.email, reset_email.to[0]
     assert_match(//, reset_email.body.to_s)
   end
+  test "account reset unsuccess" do
+    assert_difference 'ActionMailer::Base.deliveries.size', +0 do
+      post forgot_url, email: {:email => @user.email+'123'}
+    end
 
+    assert_difference 'ActionMailer::Base.deliveries.size', +0 do
+      post forgot_url, email: {:email => nil}
+    end
+  end
   test "account active" do
     assert_difference 'ActionMailer::Base.deliveries.size', +1 do
       post active_url, email: {:email => @user.email}
@@ -29,6 +38,7 @@ class SessionsTestTest < ActionDispatch::IntegrationTest
     assert_equal @user.email, active_email.to[0]
     assert_match(//, active_email.body.to_s)
   end
+
   test "password reset" do
     get reset_path(email: @user.email,token: @user.token)
     assert flash.empty?
@@ -58,11 +68,14 @@ class SessionsTestTest < ActionDispatch::IntegrationTest
     assert_not flash.empty?
     #assert_equal "123",flash
     assert_redirected_to root_url
+
+    get users_url(params: {email:@user3.email,token:@user3.token})
+    assert_not flash.empty?
+    assert_redirected_to root_url
   end
   test "active success" do
     get users_url(params: {email:@user.email,token:@user.token})
     assert_not flash.empty?
-    #assert_equal "123",flash
     assert_redirected_to root_url
   end
 end
