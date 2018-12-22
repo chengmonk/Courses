@@ -18,5 +18,5 @@ class ChooseCoursesTestTest < ActionDispatch::IntegrationTest
     get select_course_path(@course1)
     assert_redirected_to root_path
     assert_not flash.empty?
-    end
+  end
 end

@@ -30,7 +30,6 @@ Rails.application.routes.draw do
   match '/select', to: 'courses#select', via: 'get'
   resources :courses do
     member do
-      get :select
       get :quit
       get :open
       get :close

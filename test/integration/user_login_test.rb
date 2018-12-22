@@ -9,6 +9,7 @@ class UserLoginTest < ActionDispatch::IntegrationTest
   test 'login unsucces' do
     get sessions_login_path
     post sessions_login_path(params: { session: {email: @user.email, :password => 'password'} })
+    assert_response 200
     assert_redirected_to controller: :homes, action: :index
     active_email = ActionMailer::Base.deliveries.last
     assert_equal "选课系统激活账号", active_email.subject
