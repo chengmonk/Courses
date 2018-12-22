@@ -1,15 +1,10 @@
 class CoursesController < ApplicationController
-
   include CourseHelper
-
   before_action :systeminfo_exit, only: [:index, :update]
-
   before_action :student_logged_in, :is_open_student, only: [:select, :quit, :list, :set_degree, :cancel_degree]
   before_action :teacher_logged_in, :is_open_teacher, only: [:new, :create, :edit, :destroy, :update, :open, :close] #add open by qiao
   before_action :logged_in, only: :index
-
   #-------------------------for teachers----------------------
-
   def new
     @semester_value = Systeminfo.last.semester
     @course = Course.new
@@ -17,7 +12,7 @@ class CoursesController < ApplicationController
 
   def create
 
-    @course = Course.new(course_params)    
+    @course = Course.new(course_params)
     if @course.save
       current_user.teaching_courses << @course
       redirect_to courses_path, flash: {success: "新课程申请成功"}
@@ -62,6 +57,7 @@ class CoursesController < ApplicationController
   end
 
   #-------------------------for students----------------------
+<<<<<<< HEAD
 
   # def list
   #   #-------QiaoCode--------
@@ -76,6 +72,8 @@ class CoursesController < ApplicationController
   #   @course=tmp
   # end
 
+=======
+>>>>>>> 9691dd3fbe50797229276fbc7986560f7c2850bc
   def list
     @sys = Systeminfo.first
     @year_term = integrated_semester(@sys.semester)
@@ -84,59 +82,48 @@ class CoursesController < ApplicationController
     @op_times = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
     @op_depts = Course.select(:department).distinct.collect {|p| [p.department]}
     @courses = Course.where(:semester => @sys.semester)
-      # modify query method
+    # modify query method
 
-    if params[:department] != ""
+    if params[:department] != "" and !params[:department].nil?
       @courses = @courses.where(:department => params[:department])
     end
 
-    if params[:type] != ""
+    if params[:type] != "" and !params[:type].nil?
       @courses = @courses.where(:course_type => params[:type])
     end
-    
-    if params[:time] != ""
+
+    if params[:time] != "" and !params[:time].nil?
       @courses = @courses.where('course_time like :str', str: "%#{params[:time]}%")
     end
 
-    if params[:name] != ""
+    if params[:name] != "" and !params[:name].nil?
       @courses = @courses.where('name like :str', str: "%#{params[:name]}%")
     end
     @courses = @courses.order(:course_code).paginate(page: params[:page], per_page: 6)
-
-    @remind_str = params[:department].to_s + "  " + params[:type].to_s + "  "  + params[:time].to_s + "  "  +  params[:name].to_s
-    
-  
-    
-
+    @remind_str = params[:department].to_s + "  " + params[:type].to_s + "  " + params[:time].to_s + "  " + params[:name].to_s
   end
-
-
 
   def select
 
-    # time error
-    @select_course = Course.find_by_id(params[:id])
-    @courses = current_user.courses
-    @exit_course_id = @courses.find_by_id(params[:id])
-    # @exit_course_time = @courses.find_by_course_time(params[:course_time])
-    if @select_course[:student_num] >= @select_course[:limit_num]
-      flash = {:warning => "Over numbers!: #{@select_course.name}"}
-    elsif @exit_course_id
-      flash = {:warning => "您的课表中已存在:#{@exit_course_id.name}，请选择其他课程！"}
-    # elsif @exit_course_time#need to modify later
-    #   flash = {:error => "Time conflict!: #{@exit_course_time.name}"}
+    @wanted_course = Course.find_by_id(params[:id])
+
+    if is_over_number?(@wanted_course)
+      flash = {:warning => "Over numbers!: #{@wanted_course.name}"}
+    elsif is_exit_course?(params[:id])
+      flash = {:warning => "您的课表中已存在:#{@wanted_course.name}，请选择其他课程！"}
+    elsif is_time_conflict?(@wanted_course) #need to modify later
+      flash = {:warning => "课程:#{@wanted_course.name}, 与课表中的课程存在时间冲突!"}
     else
-      current_user.courses << @select_course
+      current_user.courses << @wanted_course
       if params[:degree]
         @grade = current_user.grades.find_by(course_id: params[:id])
         @grade.update(degree: true)
       end
-      @select_course.update(student_num: @select_course.student_num + 1)
-      flash = {:info => "成功选择课程: #{@select_course.name}"}
+      @wanted_course.update(student_num: @wanted_course.student_num + 1)
+      flash = {:info => "成功选择课程: #{@wanted_course.name}"}
     end
-    redirect_to :back, flash: flash
+    redirect_to courses_path, flash: flash
   end
-
 
   def set_degree
     @grade = current_user.grades.find_by_course_id(params[:id])
@@ -175,7 +162,7 @@ class CoursesController < ApplicationController
     @degree_credits = all_degree_credits(@all_degree_grades,0)
     @degree_exam_credits=all_degree_credits(@all_degree_grades,1)
 
-    
+
     @public_major_credits = all_public_credits(@all_not_degree_grades, "公共必修课",0)
     @public_major_exam_credits = all_public_credits(@all_not_degree_grades, "公共必修课",1)
 
@@ -187,13 +174,13 @@ class CoursesController < ApplicationController
     @all_exam_credits=all_degree_credits(current_user.grades,1)
 
 
-    
+
     # @degree_courses = get_semester_course(@all_degree_grades, @semester)
     # @not_degree_courses = get_semester_course(@all_not_degree_grades, @semester)
 
-          
 
-    
+
+
   end
 
   #-------------------------for both teachers and students----------------------
@@ -212,7 +199,7 @@ class CoursesController < ApplicationController
       @course_current = current_user.teaching_courses.where(:semester => @semester_current).paginate(page: params[:page], per_page: 6)
     end
     if student_logged_in?
-      @course_current = current_user.courses.where(:semester => @semester_current ).paginate(page: params[:page], per_page: 6) 
+      @course_current = current_user.courses.where(:semester => @semester_current).paginate(page: params[:page], per_page: 6)
       @grades = current_user.grades
     end
   end

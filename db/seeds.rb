@@ -38,7 +38,17 @@ end
 
 #-------------------------------------------------------------------------------------
 
-
+User.create(
+    name: "czj",
+    email: "admin@qq.com",
+    num: "2018E8018****55",
+    major: "计算机软件与理论",
+    department: "计算机与控制学院",
+    password: "password",
+    password_confirmation: "password",
+    admin: true,
+    active: true
+)
 User.create(
     name: "dufuqiang",
     email: "1317478158@qq.com",

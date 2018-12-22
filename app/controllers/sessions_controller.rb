@@ -34,7 +34,7 @@ class SessionsController < ApplicationController
       user.save
       flash = {info: '密码修改成功，请登陆！ :)'}
     else
-      flash = {danger: '未知错误'}
+      flash = {danger: 'unknown error'}
     end
     redirect_to root_url, flash: flash
     #     if @user != nil  && @user.token == params[:token] then
@@ -46,9 +46,7 @@ class SessionsController < ApplicationController
 
   def reset
     @user = User.find_by(email: params[:email].downcase)
-
     if !@user.nil? && @user.token == params[:token]
-
     else
       flash = {danger: '验证失败！请重新获取重置密码邮件！'}
       redirect_to root_url, flash: flash
@@ -61,21 +59,22 @@ class SessionsController < ApplicationController
       @user = User.find_by(email: email_params[:email].downcase)
       @user.token = SecureRandom.urlsafe_base64
       if !@user.nil? && @user.save
-        UserMailer.password_reset(@user).deliver
-        flash = {info: "重置密码邮件已发送至 #{mail},请注意查收！"}
+        UserMailer.account_activation(@user).deliver_now
+        flash = {info: "激活邮件已发送至 #{mail},请注意查收！"}
       end
     end
+    redirect_to root_url, flash: flash
   end
 
   def send_reset_email
-    mail = email_params[:email].downcase
-    if mail.blank? && mail.empty?
+    mail = email_params[:email]
+    if mail.nil? && mail.blank?
       flash = {danger: '账号不能为空'}
     else
       @user = User.find_by(email: email_params[:email].downcase)
-      @user.token = SecureRandom.urlsafe_base64
       if !@user.nil? && @user.save
-        UserMailer.password_reset(@user).deliver
+        @user.token = SecureRandom.urlsafe_base64
+        UserMailer.password_reset(@user).deliver_now
         flash = {info: "重置密码邮件已发送至 #{mail},请注意查收！"}
       else
         flash = {danger: '不存在该用户，请核对输入的用户名！'}
@@ -101,9 +100,5 @@ class SessionsController < ApplicationController
 
   def email_params
     params.require(:email).permit(:email)
-  end
-
-  def reset_params
-    params.require(:reset).permit(:email, :password)
   end
 end
