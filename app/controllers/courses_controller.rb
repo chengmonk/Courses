@@ -57,23 +57,6 @@ class CoursesController < ApplicationController
   end
 
   #-------------------------for students----------------------
-<<<<<<< HEAD
-
-  # def list
-  #   #-------QiaoCode--------
-  #   @courses = Course.where(:open=>true).paginate(page: params[:page], per_page: 4)
-  #   @course = @courses-current_user.courses
-  #   tmp=[]
-  #   @course.each do |course|
-  #     if course.open==true
-  #       tmp<<course
-  #     end
-  #   end
-  #   @course=tmp
-  # end
-
-=======
->>>>>>> 9691dd3fbe50797229276fbc7986560f7c2850bc
   def list
     @sys = Systeminfo.first
     @year_term = integrated_semester(@sys.semester)
