@@ -1,11 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  semester: MyString
+  semester: "2018-1"
   cs_start: 2018-12-12 10:25:52
-  cs_end: 2018-12-12 10:25:52
+  cs_end: 2019-12-12 10:25:52
+  teacher: false
 
 two:
-  semester: MyString
+  semester: "2018-1"
   cs_start: 2018-12-12 10:25:52
-  cs_end: 2018-12-12 10:25:52
+  cs_end: 2019-12-12 10:25:52
+  teacher: true
