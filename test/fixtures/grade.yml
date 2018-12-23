@@ -2,3 +2,8 @@ one:
   course: one
   user: czj
   grade: 60
+
+two:
+  course: two
+  user: czj2
+  grade: 60
