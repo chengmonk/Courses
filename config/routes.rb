@@ -28,6 +28,7 @@ Rails.application.routes.draw do
   match '/users', to: 'users#show', via: 'get'
   match '/active', to: 'sessions#active', via: 'get'
   match '/select', to: 'courses#select', via: 'get'
+  # get "/list/course/" => "courses#list"
   resources :courses do
     member do
       get :quit
@@ -38,6 +39,7 @@ Rails.application.routes.draw do
     end
     collection do
       get :list
+      post :list
     end
   end
 

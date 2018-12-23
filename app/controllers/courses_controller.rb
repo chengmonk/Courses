@@ -60,13 +60,11 @@ class CoursesController < ApplicationController
   def list
     @sys = Systeminfo.first
     @year_term = integrated_semester(@sys.semester)
-
     @op_courses_type = Course.select(:course_type).distinct.collect {|p| [p.course_type]}
     @op_times = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
     @op_depts = Course.select(:department).distinct.collect {|p| [p.department]}
     @courses = Course.where(:semester => @sys.semester)
     # modify query method
-
     if params[:department] != "" and !params[:department].nil?
       @courses = @courses.where(:department => params[:department])
     end

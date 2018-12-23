@@ -15,7 +15,7 @@ class ChooseCoursesTestTest < ActionDispatch::IntegrationTest
 
   test "test choose course" do
     log_in_as(@user)
-    get select_course_path(@course1)
+    get select_path(@course2)
     assert_redirected_to root_path
     assert_not flash.empty?
   end
