@@ -10,12 +10,12 @@ class ChooseCoursesTestTest < ActionDispatch::IntegrationTest
     @teacher    = users(:teacherluo)
     @course1 = courses(:one)
     @course2 = courses(:two)
-    @course3 = courses(:three)
+    # @course3 = courses(:three)
   end
 
   test "test choose course" do
     log_in_as(@user)
-    get select_path(@course2)
+    get select_path(@course1)
     assert_redirected_to root_path
     assert_not flash.empty?
   end

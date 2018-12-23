@@ -10,7 +10,8 @@ class CoursesControllerTest < ActionDispatch::IntegrationTest
     @teacher = users(:teacherluo)
     @course1 = courses(:one)
     @course2 = courses(:two)
-    @course3 = courses(:three)
+    # @course3 = courses(:three)
+
   end
 
   test "should not get courses when not logged in" do
