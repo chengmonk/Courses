@@ -7,6 +7,9 @@ czj:
   password_digest: <%= User.digest('password') %>
   token: 123
   active: false
+  admin: false
+  teacher: false
+
 czj2:
   name: 程子俊
   email: cheng_monk@163.com
@@ -16,6 +19,8 @@ czj2:
   password_digest: <%= User.digest('password') %>
   token: 123
   active: true
+  admin: false
+  teacher: false
 demo:
   name: 程子俊
   email: student13@test.com

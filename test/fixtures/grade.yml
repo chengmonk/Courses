@@ -6,5 +6,9 @@ one:
 two:
   course: two
   user: czj2
-  grade: 60
-  grade: 66
+  grade: 62
+
+three:
+  course: one
+  user: czj2
+  grade: 61

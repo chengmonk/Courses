@@ -17,6 +17,7 @@ one:
   exam_type: "大开卷"
   department: "数学学院"
   semester: "2018-1"
+  teacher: teacherluo
 # column: value
 #
 two:
@@ -32,7 +33,7 @@ two:
   exam_type: "课堂开卷"
   department: "数学学院"
   semester: "2018-1"
-
+  teacher: teacherhu
 
 
 

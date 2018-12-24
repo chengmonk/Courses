@@ -18,8 +18,13 @@ class CourseQueryTest < ActionDispatch::IntegrationTest
 
   test "query course by department" do
   	log_in_as(@user2)
-    get grades_url( params: {"year_term" => "2018-1"})
-    assert_response 200
+    user=current_user
+    # assert_equal"123",is_open_student?
+    # assert student_logged_in?
+    # assert is_open_student?
+    # get grades_url( params: {"year_term" => "2018-1"})
+    # get "/courses/list"
+    #     # assert_response 200
   end
 
 end

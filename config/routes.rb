@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :notices
   get 'user_mailer/accout_activation'
 
   get 'user_mailer/password_reset'
