@@ -27,8 +27,6 @@ class ActiveSupport::TestCase
     end_time = @sys.cs_end
     current_time = Time.now
     current_time > start_time and current_time < end_time and !@sys.teacher
-    current_time
-    
 
   end
 
@@ -78,9 +76,9 @@ class ActionDispatch::IntegrationTest
   def is_open_student?
 
     @sys = Systeminfo.first
-    start_time = @sys.cs_start
-    end_time = @sys.cs_end
-    current_time = Time.now
+    start_time = @sys.cs_start.to_i
+    end_time = @sys.cs_end.to_i
+    current_time = Time.now.to_i
     current_time > start_time and current_time < end_time and !@sys.teacher
   end
 

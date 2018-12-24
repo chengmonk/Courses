@@ -1,7 +1,7 @@
 {
   "MiniTest": {
     "coverage": {
-      "/home/dufuqiang/ruby_project/Courses/app/helpers/course_helper.rb": [
+      "/Users/chengmonk/RubymineProjects/courses_select/app/helpers/course_helper.rb": [
         1,
         null,
         1,
@@ -26,11 +26,11 @@
         null,
         1,
         null,
-        9,
-        9,
-        9,
-        9,
-        9,
+        8,
+        8,
+        8,
+        8,
+        8,
         null,
         null,
         null,
@@ -93,8 +93,8 @@
         null,
         1,
         null,
-        10,
-        10,
+        11,
+        11,
         null,
         0,
         null,
@@ -103,7 +103,7 @@
         null,
         null
       ],
-      "/home/dufuqiang/ruby_project/Courses/app/helpers/sessions_helper.rb": [
+      "/Users/chengmonk/RubymineProjects/courses_select/app/helpers/sessions_helper.rb": [
         1,
         null,
         1,
@@ -111,19 +111,19 @@
         null,
         null,
         1,
-        5,
+        6,
         null,
         null,
         1,
-        128,
+        130,
         null,
         null,
         1,
-        120,
+        122,
         null,
         null,
         1,
-        14,
+        18,
         null,
         null,
         null,
@@ -137,9 +137,9 @@
         null,
         null,
         1,
-        687,
-        624,
-        63,
+        680,
+        603,
+        77,
         0,
         0,
         0,
@@ -170,13 +170,11 @@
         null,
         null
       ],
-      "/home/dufuqiang/ruby_project/Courses/app/models/grade.rb": [
-        1,
-        1,
+      "/Users/chengmonk/RubymineProjects/courses_select/app/models/systeminfo.rb": [
         1,
         null
       ],
-      "/home/dufuqiang/ruby_project/Courses/app/models/user.rb": [
+      "/Users/chengmonk/RubymineProjects/courses_select/app/models/user.rb": [
         1,
         null,
         1,
@@ -235,11 +233,7 @@
         null,
         null
       ],
-      "/home/dufuqiang/ruby_project/Courses/app/models/systeminfo.rb": [
-        1,
-        null
-      ],
-      "/home/dufuqiang/ruby_project/Courses/app/models/course.rb": [
+      "/Users/chengmonk/RubymineProjects/courses_select/app/models/course.rb": [
         1,
         null,
         1,
@@ -253,37 +247,24 @@
         null,
         null
       ],
-      "/home/dufuqiang/ruby_project/Courses/app/controllers/homes_controller.rb": [
+      "/Users/chengmonk/RubymineProjects/courses_select/app/models/grade.rb": [
         1,
         1,
-        null,
-        null
-      ],
-      "/home/dufuqiang/ruby_project/Courses/app/controllers/application_controller.rb": [
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/home/dufuqiang/ruby_project/Courses/app/helpers/application_helper.rb": [
-        1,
-        null,
-        null
-      ],
-      "/home/dufuqiang/ruby_project/Courses/app/helpers/user_mailer_helper.rb": [
         1,
         null
       ],
-      "/home/dufuqiang/ruby_project/Courses/app/controllers/sessions_controller.rb": [
+      "/Users/chengmonk/RubymineProjects/courses_select/app/models/notice.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/chengmonk/RubymineProjects/courses_select/app/controllers/sessions_controller.rb": [
         1,
         1,
         null,
         1,
-        35,
-        35,
+        36,
+        36,
         35,
         31,
         31,
@@ -296,9 +277,9 @@
         null,
         null,
         null,
-        0,
+        1,
         null,
-        35,
+        36,
         null,
         null,
         1,
@@ -375,7 +356,7 @@
         1,
         null,
         1,
-        73,
+        75,
         null,
         null,
         1,
@@ -383,7 +364,29 @@
         null,
         null
       ],
-      "/home/dufuqiang/ruby_project/Courses/app/controllers/grades_controller.rb": [
+      "/Users/chengmonk/RubymineProjects/courses_select/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/chengmonk/RubymineProjects/courses_select/app/helpers/application_helper.rb": [
+        1,
+        null,
+        null
+      ],
+      "/Users/chengmonk/RubymineProjects/courses_select/app/helpers/notices_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/chengmonk/RubymineProjects/courses_select/app/helpers/user_mailer_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/chengmonk/RubymineProjects/courses_select/app/controllers/grades_controller.rb": [
         1,
         1,
         null,
@@ -446,7 +449,7 @@
         null,
         null
       ],
-      "/home/dufuqiang/ruby_project/Courses/app/mailers/user_mailer.rb": [
+      "/Users/chengmonk/RubymineProjects/courses_select/app/mailers/user_mailer.rb": [
         1,
         null,
         1,
@@ -472,13 +475,26 @@
         null,
         null
       ],
-      "/home/dufuqiang/ruby_project/Courses/app/mailers/application_mailer.rb": [
+      "/Users/chengmonk/RubymineProjects/courses_select/app/mailers/application_mailer.rb": [
         1,
         1,
         1,
         null
       ],
-      "/home/dufuqiang/ruby_project/Courses/app/controllers/courses_controller.rb": [
+      "/Users/chengmonk/RubymineProjects/courses_select/app/controllers/homes_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        6,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/chengmonk/RubymineProjects/courses_select/app/controllers/courses_controller.rb": [
         1,
         1,
         1,
@@ -541,12 +557,10 @@
         1,
         6,
         6,
-        null,
         12,
         6,
         12,
         6,
-        null,
         null,
         6,
         1,
@@ -657,27 +671,27 @@
         null,
         null,
         1,
-        14,
-        0,
+        16,
+        2,
         null,
         null,
         null,
         null,
         1,
-        7,
-        0,
-        null,
-        null,
-        null,
-        null,
+        8,
         1,
-        3,
-        1,
+        null,
         null,
         null,
         null,
         1,
         4,
+        2,
+        null,
+        null,
+        null,
+        1,
+        5,
         0,
         null,
         null,
@@ -689,7 +703,7 @@
         null,
         null
       ],
-      "/home/dufuqiang/ruby_project/Courses/app/controllers/users_controller.rb": [
+      "/Users/chengmonk/RubymineProjects/courses_select/app/controllers/users_controller.rb": [
         1,
         1,
         1,
@@ -774,11 +788,89 @@
         null,
         null
       ],
-      "/home/dufuqiang/ruby_project/Courses/app/controllers/user_mailer_controller.rb": [
+      "/Users/chengmonk/RubymineProjects/courses_select/app/controllers/user_mailer_controller.rb": [
+        1,
+        null
+      ],
+      "/Users/chengmonk/RubymineProjects/courses_select/app/controllers/notices_controller.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
         0,
-        0
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        2,
+        1,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
       ]
     },
-    "timestamp": 1545620704
+    "timestamp": 1545621926
   }
 }
