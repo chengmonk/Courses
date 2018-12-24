@@ -67,27 +67,26 @@ tips：Heroku的注册和登录可能需要科学上网，请自备梯子。
 ### 功能介绍
 #### 面向所有用户的邮件系统
 ##### 用户注册激活
-根据我们的需求分析，然后设计了如下的用户注册激活功能流程图：
+根据我们的需求分析，然后设计了如下的用户注册激活功能流程图：  
 <img src="/lib/邮件激活流程图.png" width="700"> 
 
-以下为程序运行截图：
+以下为程序运行截图：  
 
 ##### 用户找回密码
-根据我们的需求分析，然后设计了如下的用户找回密码功能流程图：
-<img src="/lib/邮件重置密码.png" width="700"> 
-
-以下为程序运行截图：
-<img src="/lib/reset/1.png" width="700">
-如果在登录的时候忘记密码，就点击下方的忘记密码链接。
-<img src="/lib/reset/3.png" width="700">
-在文本框内输入注册时所使用的邮箱
-<img src="/lib/reset/4.png" width="700">
-发送邮件成功后，系统会反馈会一个提示
-<img src="/lib/reset/5.png" width="700">
-这是邮箱中收到的内容，点开链接进行重置密码的页面
-<img src="/lib/reset/6.png" width="700">
-将修改的密码输入之后点击“重置密码”
-<img src="/lib/reset/7.png" width="700">
+根据我们的需求分析，然后设计了如下的用户找回密码功能流程图：  
+<img src="/lib/邮件重置密码.png" width="700">  
+以下为程序运行截图：  
+<img src="/lib/reset/1.png" width="700">  
+如果在登录的时候忘记密码，就点击下方的忘记密码链接。  
+<img src="/lib/reset/3.png" width="700">  
+在文本框内输入注册时所使用的邮箱  
+<img src="/lib/reset/4.png" width="700">  
+发送邮件成功后，系统会反馈会一个提示  
+<img src="/lib/reset/5.png" width="700">  
+这是邮箱中收到的内容，点开链接进行重置密码的页面  
+<img src="/lib/reset/6.png" width="700">  
+将修改的密码输入之后点击“重置密码”  
+<img src="/lib/reset/7.png" width="700">  
 修改成功
 * * *
 
