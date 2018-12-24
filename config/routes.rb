@@ -28,6 +28,7 @@ Rails.application.routes.draw do
   match '/users', to: 'users#show', via: 'get'
   match '/active', to: 'sessions#active', via: 'get'
   match '/select', to: 'courses#select', via: 'get'
+
   resources :courses do
     member do
       get :quit
