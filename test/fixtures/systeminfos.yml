@@ -4,10 +4,10 @@ one:
   semester: "2018-1"
   cs_start: 2018-12-23 23:40:40 +0800
   cs_end: 2019-12-23 23:40:40 +0800
-  teacher: false
+  teacher: true
 
 two:
   semester: "2018-1"
   cs_start: 2018-12-23 23:40:40 +0800
   cs_end: 2019-12-23 23:40:40 +0800
-  teacher: true
+  teacher: false
