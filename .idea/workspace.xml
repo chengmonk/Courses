@@ -2,47 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7b1c0f9-5303-4042-90a5-05cecbda0e94" name="Default" comment="添加systeminfo模型，增加选课时间控制">
-      <change afterPath="$PROJECT_DIR$/test/controllers/courses_controller_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/controllers/grades_controller_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/controllers/homes_controller_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/controllers/sessions_controller_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/controllers/user_mailer_controller_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/controllers/users_controller_test.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/.last_run.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/.resultset.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/.resultset.json.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/application.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/application.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/colorbox/border.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/colorbox/controls.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/colorbox/loading.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/colorbox/loading_background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/favicon_green.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/favicon_red.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/favicon_yellow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/loading.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/magnify.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/smoothness/images/ui-bg_flat_0_aaaaaa_40x100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/smoothness/images/ui-bg_flat_75_ffffff_40x100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/smoothness/images/ui-bg_glass_55_fbf9ee_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/smoothness/images/ui-bg_glass_65_ffffff_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/smoothness/images/ui-bg_glass_75_dadada_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/smoothness/images/ui-bg_glass_95_fef1ec_1x400.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/smoothness/images/ui-icons_222222_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/smoothness/images/ui-icons_2e83ff_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/smoothness/images/ui-icons_454545_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/smoothness/images/ui-icons_888888_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/assets/0.10.0/smoothness/images/ui-icons_cd0a0a_256x240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/notices_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/notices_controller_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/courses.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/courses.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/integration/course_helper_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/integration/course_helper_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/integration/course_query_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/integration/course_query_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/压力测试.md" beforeDir="false" afterPath="$PROJECT_DIR$/压力测试.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/notices_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/notices_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/.last_run.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/.last_run.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/.resultset.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/.resultset.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/integration/user_login_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/integration/user_login_test.rb" afterDir="false" />
     </list>
     <ignored path="vim.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -87,13 +52,14 @@
     <SUITE FILE_PATH="coverage/vim@test_password_reset__vim.rcov" NAME="test_password_reset: vim Coverage Results" MODIFIED="1545356712695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="vim" />
     <SUITE FILE_PATH="coverage/vim@Run_test__CoursesControllerTest___vim.rcov" NAME="Run test 'CoursesControllerTest': vim Coverage Results" MODIFIED="1545621609750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="vim" />
     <SUITE FILE_PATH="coverage/vim@test_should_get_selected_by_teacher_not_student__vim.rcov" NAME="test_should_get_selected_by_teacher_not_student: vim Coverage Results" MODIFIED="1545310422491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="vim" />
+    <SUITE FILE_PATH="coverage/vim@test_logout__vim.rcov" NAME="test_logout: vim Coverage Results" MODIFIED="1545623373295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="vim" />
     <SUITE FILE_PATH="coverage/vim@test_invite__vim.rcov" NAME="test_invite: vim Coverage Results" MODIFIED="1545273387598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="vim" />
     <SUITE FILE_PATH="coverage/vim@Run_test__CourseHelperTest___vim.rcov" NAME="Run test 'CourseHelperTest': vim Coverage Results" MODIFIED="1545619674147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="vim" />
     <SUITE FILE_PATH="coverage/vim@test_invalid_signup_information__vim.rcov" NAME="test_invalid_signup_information: vim Coverage Results" MODIFIED="1545371802880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="vim" />
     <SUITE FILE_PATH="coverage/vim@test_should_not_get_quit_course_when_not_logged_in__vim.rcov" NAME="test_should_not_get_quit_course_when_not_logged_in: vim Coverage Results" MODIFIED="1545447638733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="vim" />
     <SUITE FILE_PATH="coverage/vim@test_grade_push__vim.rcov" NAME="test_grade_push: vim Coverage Results" MODIFIED="1545353444616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="vim" />
     <SUITE FILE_PATH="coverage/vim@Development__vim.rcov" NAME="Development: vim Coverage Results" MODIFIED="1542782730353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="vim" />
-    <SUITE FILE_PATH="coverage/vim@test_login_with_valid_information_followed_by_logout__vim.rcov" NAME="test_login_with_valid_information_followed_by_logout: vim Coverage Results" MODIFIED="1545310772411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="vim" />
+    <SUITE FILE_PATH="coverage/vim@test_login_with_valid_information_followed_by_logout__vim.rcov" NAME="test_login_with_valid_information_followed_by_logout: vim Coverage Results" MODIFIED="1545623292503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="vim" />
     <SUITE FILE_PATH="coverage/vim@Run_test__SessionsTestTest___vim.rcov" NAME="Run test 'SessionsTestTest': vim Coverage Results" MODIFIED="1545368494393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="vim" />
     <SUITE FILE_PATH="coverage/vim@Run_test__UserTest___vim.rcov" NAME="Run test 'UserTest': vim Coverage Results" MODIFIED="1545356031735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="vim" />
     <SUITE FILE_PATH="coverage/vim@test_active__vim.rcov" NAME="test_active: vim Coverage Results" MODIFIED="1545274851684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="vim" />
@@ -142,8 +108,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/integration/course_helper_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="57" selection-start-line="57" selection-end-line="57" />
+            <state relative-caret-position="200">
+              <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -158,10 +124,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/integration/course_query_test.rb">
+        <entry file="file://$PROJECT_DIR$/app/controllers/courses_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="57" selection-start-line="57" selection-end-line="57" />
+            <state relative-caret-position="344">
+              <caret line="125" selection-start-line="125" selection-end-line="125" />
             </state>
           </provider>
         </entry>
@@ -176,55 +142,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/controllers/courses_controller_test.rb">
+        <entry file="file://$PROJECT_DIR$/app/views/courses/list.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+            <state relative-caret-position="225">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/controllers/grades_controller_test.rb">
+        <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/controllers/homes_controller_test.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/controllers/sessions_controller_test.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/controllers/user_mailer_controller_test.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+            <state relative-caret-position="150">
+              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/controllers/users_controller_test.rb">
+        <entry file="file://$PROJECT_DIR$/test/integration/user_login_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+            <state relative-caret-position="427">
+              <caret line="73" column="33" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/notices_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/test_helper.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="366">
+              <caret line="32" column="2" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -273,7 +230,6 @@
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/test/integration/user_signup_test_test.rb" />
         <option value="$PROJECT_DIR$/test/integration/sessions_test_test.rb" />
-        <option value="$PROJECT_DIR$/test/integration/user_login_test.rb" />
         <option value="$PROJECT_DIR$/app/views/shared/_sidenav.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/courses_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
@@ -288,11 +244,8 @@
         <option value="$PROJECT_DIR$/app/views/notices/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/homes_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/homes/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/notices_controller.rb" />
         <option value="$PROJECT_DIR$/test/controllers/notices_controller_test.rb" />
-        <option value="$PROJECT_DIR$/test/integration/course_helper_test.rb" />
         <option value="$PROJECT_DIR$/test/fixtures/systeminfos.yml" />
-        <option value="$PROJECT_DIR$/test/test_helper.rb" />
         <option value="$PROJECT_DIR$/test/fixtures/courses.yml" />
         <option value="$PROJECT_DIR$/压力测试.md" />
         <option value="$PROJECT_DIR$/test/integration/course_query_test.rb" />
@@ -302,6 +255,10 @@
         <option value="$PROJECT_DIR$/test/controllers/sessions_controller_test.rb" />
         <option value="$PROJECT_DIR$/test/controllers/user_mailer_controller_test.rb" />
         <option value="$PROJECT_DIR$/test/controllers/users_controller_test.rb" />
+        <option value="$PROJECT_DIR$/test/integration/course_helper_test.rb" />
+        <option value="$PROJECT_DIR$/test/test_helper.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/notices_controller.rb" />
+        <option value="$PROJECT_DIR$/test/integration/user_login_test.rb" />
       </list>
     </option>
   </component>
@@ -343,18 +300,35 @@
             <path>
               <item name="vim" type="b2602c69:ProjectViewProjectNode" />
               <item name="courses_select" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vim" type="b2602c69:ProjectViewProjectNode" />
               <item name="courses_select" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vim" type="b2602c69:ProjectViewProjectNode" />
-              <item name="courses_select" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="courses_select" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="helpers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="courses_select" type="462c0819:PsiDirectoryNode" />
+              <item name="coverage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="courses_select" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="courses_select" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="integration" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -400,7 +374,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.test_in_select_course_time_for_student: vim">
+  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.test_logout: vim">
     <configuration name="Run test 'CourseHelperTest': vim" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
       <module name="vim" />
       <predefined_log_file enabled="true" id="RUBY_TESTUNIT" />
@@ -461,36 +435,6 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method v="2" />
     </configuration>
-    <configuration name="Run test 'NoticesControllerTest': vim" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
-      <module name="vim" />
-      <predefined_log_file enabled="true" id="RUBY_TESTUNIT" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-Itest" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="test" />
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/controllers/notices_controller_test.rb" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
-      <method v="2" />
-    </configuration>
     <configuration name="test_in_select_course_time_for_student: vim" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
       <module name="vim" />
       <predefined_log_file enabled="true" id="RUBY_TESTUNIT" />
@@ -521,7 +465,7 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_no_week_time_conflict_course5_and_course6_in_czj2: vim" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+    <configuration name="test_login_with_valid_information_followed_by_logout: vim" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
       <module name="vim" />
       <predefined_log_file enabled="true" id="RUBY_TESTUNIT" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-Itest" />
@@ -541,9 +485,39 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/integration/course_helper_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/integration/user_login_test.rb" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_no_week_time_conflict_course5_and_course6_in_czj2" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_login_with_valid_information_followed_by_logout" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_logout: vim" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+      <module name="vim" />
+      <predefined_log_file enabled="true" id="RUBY_TESTUNIT" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-Itest" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/test/integration/user_login_test.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="test_logout" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_METHOD" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
@@ -565,19 +539,19 @@
       <item itemvalue="Rails.Development: vim" />
       <item itemvalue="Rake.spec: vim" />
       <item itemvalue="Rake.test: vim" />
-      <item itemvalue="Test::Unit/Shoulda/Minitest.Run test 'NoticesControllerTest': vim" />
       <item itemvalue="Test::Unit/Shoulda/Minitest.test_in_select_course_time_for_student: vim" />
-      <item itemvalue="Test::Unit/Shoulda/Minitest.test_no_week_time_conflict_course5_and_course6_in_czj2: vim" />
       <item itemvalue="Test::Unit/Shoulda/Minitest.Run test 'CourseHelperTest': vim" />
       <item itemvalue="Test::Unit/Shoulda/Minitest.Run test 'CoursesControllerTest': vim" />
+      <item itemvalue="Test::Unit/Shoulda/Minitest.test_logout: vim" />
+      <item itemvalue="Test::Unit/Shoulda/Minitest.test_login_with_valid_information_followed_by_logout: vim" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Test::Unit/Shoulda/Minitest.test_logout: vim" />
+        <item itemvalue="Test::Unit/Shoulda/Minitest.test_login_with_valid_information_followed_by_logout: vim" />
         <item itemvalue="Test::Unit/Shoulda/Minitest.test_in_select_course_time_for_student: vim" />
         <item itemvalue="Test::Unit/Shoulda/Minitest.Run test 'CoursesControllerTest': vim" />
         <item itemvalue="Test::Unit/Shoulda/Minitest.Run test 'CourseHelperTest': vim" />
-        <item itemvalue="Test::Unit/Shoulda/Minitest.test_no_week_time_conflict_course5_and_course6_in_czj2: vim" />
-        <item itemvalue="Test::Unit/Shoulda/Minitest.Run test 'NoticesControllerTest': vim" />
       </list>
     </recent_temporary>
   </component>
@@ -628,7 +602,7 @@
       <workItem from="1545528422247" duration="8599000" />
       <workItem from="1545574444884" duration="3575000" />
       <workItem from="1545612780338" duration="81000" />
-      <workItem from="1545612878477" duration="8901000" />
+      <workItem from="1545612878477" duration="10481000" />
     </task>
     <task id="LOCAL-00001" summary="nothing">
       <created>1542783138548</created>
@@ -683,39 +657,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test_in_select_course_time_for_student__vim - 2018.12.24 at 10h 51m 08s.xml">
-      <configuration name="test_in_select_course_time_for_student: vim" configurationId="TestUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_in_select_course_time_for_student__vim - 2018.12.24 at 10h 51m 54s.xml">
-      <configuration name="test_in_select_course_time_for_student: vim" configurationId="TestUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_in_select_course_time_for_student__vim - 2018.12.24 at 10h 52m 11s.xml">
-      <configuration name="test_in_select_course_time_for_student: vim" configurationId="TestUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_in_select_course_time_for_student__vim - 2018.12.24 at 10h 53m 05s.xml">
-      <configuration name="test_in_select_course_time_for_student: vim" configurationId="TestUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_in_select_course_time_for_student__vim - 2018.12.24 at 10h 53m 32s.xml">
-      <configuration name="test_in_select_course_time_for_student: vim" configurationId="TestUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_in_select_course_time_for_student__vim - 2018.12.24 at 10h 53m 56s.xml">
-      <configuration name="test_in_select_course_time_for_student: vim" configurationId="TestUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_in_select_course_time_for_student__vim - 2018.12.24 at 10h 54m 58s.xml">
-      <configuration name="test_in_select_course_time_for_student: vim" configurationId="TestUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_in_select_course_time_for_student__vim - 2018.12.24 at 10h 56m 19s.xml">
-      <configuration name="test_in_select_course_time_for_student: vim" configurationId="TestUnitRunConfigurationType" />
-    </history-entry>
     <history-entry file="Run_test_'CoursesControllerTest'__vim - 2018.12.24 at 11h 19m 47s.xml">
       <configuration name="Run test 'CoursesControllerTest': vim" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
     <history-entry file="Run_test_'CoursesControllerTest'__vim - 2018.12.24 at 11h 20m 13s.xml">
       <configuration name="Run test 'CoursesControllerTest': vim" configurationId="TestUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="test_in_select_course_time_for_student__vim - 2018.12.24 at 11h 24m 23s.xml">
+      <configuration name="test_in_select_course_time_for_student: vim" configurationId="TestUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="test_in_select_course_time_for_student__vim - 2018.12.24 at 11h 24m 55s.xml">
+      <configuration name="test_in_select_course_time_for_student: vim" configurationId="TestUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="test_logout__vim - 2018.12.24 at 11h 45m 34s.xml">
+      <configuration name="test_logout: vim" configurationId="TestUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="test_logout__vim - 2018.12.24 at 11h 45m 47s.xml">
+      <configuration name="test_logout: vim" configurationId="TestUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="test_login_with_valid_information_followed_by_logout__vim - 2018.12.24 at 11h 48m 16s.xml">
+      <configuration name="test_login_with_valid_information_followed_by_logout: vim" configurationId="TestUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="test_logout__vim - 2018.12.24 at 11h 49m 01s.xml">
+      <configuration name="test_logout: vim" configurationId="TestUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="test_logout__vim - 2018.12.24 at 11h 49m 22s.xml">
+      <configuration name="test_logout: vim" configurationId="TestUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="test_logout__vim - 2018.12.24 at 11h 49m 36s.xml">
+      <configuration name="test_logout: vim" configurationId="TestUnitRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99208000" />
+    <option name="totallyTimeSpent" value="100788000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -728,17 +702,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="973" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Favorites" order="0" sideWeight="0.5141243" side_tool="true" weight="0.3513732" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4858757" visible="true" weight="0.18803419" />
+      <window_info id="Favorites" order="0" sideWeight="0.51607716" side_tool="true" weight="0.18803419" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.48392284" visible="true" weight="0.18803419" />
       <window_info id="Structure" order="2" weight="0.24973376" />
-      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.51648355" side_tool="true" visible="true" weight="0.5260116" />
-      <window_info anchor="bottom" id="Version Control" order="1" sideWeight="0.49873632" weight="0.32564104" />
-      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.47313797" weight="0.28092486" />
+      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.528083" side_tool="true" weight="0.28092486" />
+      <window_info anchor="bottom" id="Version Control" order="1" sideWeight="0.497558" weight="0.32485548" />
+      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.47191697" visible="true" weight="0.28092486" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.3287483" />
-      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.48351648" visible="true" weight="0.5260116" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.48290598" weight="0.5260116" />
       <window_info anchor="bottom" id="Debug" order="6" sideWeight="0.48626816" weight="0.28319502" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
@@ -833,16 +806,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/grades_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="51" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/notices/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/notices/show.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -970,13 +933,6 @@
     <entry file="file://$PROJECT_DIR$/app/helpers/notices_helper.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/homes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -988,13 +944,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/notices_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-284">
-          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -1039,20 +988,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/courses_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="125" selection-start-line="125" selection-end-line="125" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/fixtures/courses.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="577">
@@ -1073,13 +1008,6 @@
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/courses/list.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/integration/course_query_test.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
@@ -1094,10 +1022,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/controllers/users_controller_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/controllers/user_mailer_controller_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/controllers/sessions_controller_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/controllers/homes_controller_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/controllers/grades_controller_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/integration/course_helper_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="200">
+          <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1115,38 +1078,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/controllers/grades_controller_test.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/courses/list.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        <state relative-caret-position="225">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/controllers/homes_controller_test.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/notices_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        <state relative-caret-position="248">
+          <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/controllers/sessions_controller_test.rb">
+    <entry file="file://$PROJECT_DIR$/test/test_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+        <state relative-caret-position="366">
+          <caret line="32" column="2" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/controllers/user_mailer_controller_test.rb">
+    <entry file="file://$PROJECT_DIR$/coverage/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/controllers/users_controller_test.rb">
+    <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        <state relative-caret-position="150">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/courses_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/integration/user_login_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="73" column="33" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
         </state>
       </provider>
     </entry>
