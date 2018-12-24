@@ -5,7 +5,7 @@ heroku creat [appname]
 heroku apps: rename [newname]
 
 添加heroku分支：
-heroku git:remote -a csiie
+heroku git:remote -a iiecs
 推送
 git push heroku master
 
