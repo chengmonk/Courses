@@ -6,14 +6,10 @@ class CourseQueryTest < ActionDispatch::IntegrationTest
   # end
 
   def setup
-    # @user  = users(:michael)
     @user2 = users(:czj2)
     @teacher6 = users(:teacher6)
-
-    # @teacher    = users(:teacherluo)
-    # @course1 = courses(:one)
     @course2 = courses(:two)
-    # @course3 = courses(:three)
+
   end
 
 
