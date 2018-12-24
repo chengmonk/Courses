@@ -7,23 +7,9 @@ czj:
   password_digest: <%= User.digest('password') %>
   token: 123
   active: false
-  admin: false
-  teacher: false
-
 czj2:
   name: 程子俊
   email: cheng_monk@163.com
-  num: 201628015017
-  major: 计算机应用技术
-  department: 信息工程研究所
-  password_digest: <%= User.digest('password') %>
-  token: 123
-  active: true
-  admin: false
-  teacher: false
-demo:
-  name: 程子俊
-  email: student13@test.com
   num: 201628015017
   major: 计算机应用技术
   department: 信息工程研究所
@@ -49,3 +35,19 @@ teacherhu:
   department: 计算机与控制学院
   password_digest: <%= User.digest('password') %>
 
+teacher6:
+  name: teacher6
+  email: teacher6@test.com
+  teacher: true
+  department: 计算机与控制学院
+  password_digest: <%= User.digest('password') %>
+  token: 123
+  active: true
+
+  <% (0..45).each do |n| %>
+student_<%= n %>:
+  name: <%= "user#{n}" %>
+  email: <%= "user#{n}@example.com" %>
+  department: 计算机与控制学院
+  password_digest: <%= User.digest('password') %>
+  <% end %>

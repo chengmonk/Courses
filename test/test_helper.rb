@@ -19,6 +19,19 @@ class ActiveSupport::TestCase
   def log_in_as(user)
     session[:user_id] = user.id
   end
+
+   def is_open_student?
+
+    @sys = Systeminfo.first
+    start_time = @sys.cs_start
+    end_time = @sys.cs_end
+    current_time = Time.now
+    current_time > start_time and current_time < end_time and !@sys.teacher
+    current_time
+    
+
+  end
+
 end
 
 class ActionDispatch::IntegrationTest

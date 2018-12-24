@@ -17,6 +17,7 @@ module CourseHelper
   	end_time = @sys.cs_end
   	current_time = Time.now
   	current_time > start_time and current_time < end_time and !@sys.teacher
+    true
 
   end
 
@@ -27,6 +28,7 @@ module CourseHelper
   	end_time = @sys.cs_end
   	current_time = Time.now
   	current_time > start_time and current_time < end_time and @sys.teacher
+    true
 
   end
 
@@ -93,14 +95,6 @@ module CourseHelper
       true
     else
       false
-    end
-  end
-
-  def in_course_table?(id)
-    if !current_user.grades.find_by_course_id(params[:id])
-      false
-    else
-      true
     end
   end
 
