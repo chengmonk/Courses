@@ -113,8 +113,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-49">
-                <caret line="57" column="27" lean-forward="true" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
+              <first_editor relative-caret-position="320">
+                <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
               </first_editor>
               <second_editor />
             </state>
@@ -582,7 +582,7 @@
       <workItem from="1545528422247" duration="8599000" />
       <workItem from="1545574444884" duration="3575000" />
       <workItem from="1545612780338" duration="81000" />
-      <workItem from="1545612878477" duration="16484000" />
+      <workItem from="1545612878477" duration="16731000" />
     </task>
     <task id="LOCAL-00001" summary="nothing">
       <created>1542783138548</created>
@@ -640,7 +640,21 @@
       <option name="project" value="LOCAL" />
       <updated>1545637030476</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="修改readme">
+      <created>1545638832543</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1545638832543</updated>
+    </task>
+    <task id="LOCAL-00010" summary="修改readme">
+      <created>1545638914533</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1545638914533</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -676,7 +690,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106791000" />
+    <option name="totallyTimeSpent" value="107038000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1111,8 +1125,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-49">
-            <caret line="57" column="27" lean-forward="true" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
+          <first_editor relative-caret-position="320">
+            <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
           </first_editor>
           <second_editor />
         </state>
