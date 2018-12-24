@@ -57,8 +57,8 @@ ActiveRecord::Schema.define(version: 20181224010726) do
 
   create_table "systeminfos", force: :cascade do |t|
     t.string   "semester",   default: "2018-1",              null: false
-    t.datetime "cs_start",   default: '2018-12-24 01:45:36', null: false
-    t.datetime "cs_end",     default: '2018-12-24 01:45:36', null: false
+    t.datetime "cs_start",   default: '2018-12-24 03:35:14', null: false
+    t.datetime "cs_end",     default: '2018-12-24 03:35:14', null: false
     t.datetime "created_at",                                 null: false
     t.datetime "updated_at",                                 null: false
     t.boolean  "teacher"

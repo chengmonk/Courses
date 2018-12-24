@@ -17,7 +17,7 @@ one:
   exam_type: "大开卷"
   department: "数学学院"
   semester: "2018-1"
-# column: value
+  teacher: teacherluo
 #
 two:
   course_code: "011D9032Z﹡"
