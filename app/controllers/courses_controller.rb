@@ -103,7 +103,7 @@ class CoursesController < ApplicationController
       @wanted_course.update(student_num: @wanted_course.student_num + 1)
       flash = {:info => "成功选择课程: #{@wanted_course.name}"}
     end
-    redirect_to courses_path, flash: flash
+    redirect_to :back, flash: flash
   end
 
   def set_degree

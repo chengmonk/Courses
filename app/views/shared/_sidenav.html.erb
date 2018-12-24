@@ -51,14 +51,14 @@
               <%= link_to my_course_list_courses_path do %>
                   <span class="glyphicon glyphicon-chevron-right"></span> 
                   查看课表
-                  <span class="label label-info pull-right"><%= current_user.courses.where(:semester => Systeminfo.first.semester).count %></span>
+                  <span class="label label-info pull-right"></span>
               <% end %>
             </li>
              <li class="list-group-item">
               <%= link_to credit_statistics_courses_path do %>
                   <span class="glyphicon glyphicon-chevron-right"></span> 
                   学分统计
-                  <span class="label label-info pull-right"><%= current_user.courses.where(:semester => Systeminfo.first.semester).count %></span>
+                  <span class="label label-info pull-right">已选<%= all_degree_credits(current_user.grades,0) %>学分</span>
               <% end %>
             </li>
         <% end %>

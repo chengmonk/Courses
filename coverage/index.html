@@ -14,7 +14,7 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-12-25T00:10:42+08:00">2018-12-25T00:10:42+08:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-12-25T00:16:04+08:00">2018-12-25T00:16:04+08:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,7 +25,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         7.19
+         7.47
        </span>
     </span> hits/line)
   </h2>
@@ -147,7 +147,7 @@
         <td>133</td>
         <td>98</td>
         <td>35</td>
-        <td>4.6</td>
+        <td>5.9</td>
       </tr>
       
       <tr>
@@ -167,7 +167,7 @@
         <td>33</td>
         <td>25</td>
         <td>8</td>
-        <td>61.5</td>
+        <td>60.8</td>
       </tr>
       
       <tr>
@@ -524,7 +524,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         15.65
+         16.53
        </span>
     </span> hits/line)
   </h2>
@@ -566,7 +566,7 @@
         <td>133</td>
         <td>98</td>
         <td>35</td>
-        <td>4.6</td>
+        <td>5.9</td>
       </tr>
       
       <tr>
@@ -586,7 +586,7 @@
         <td>33</td>
         <td>25</td>
         <td>8</td>
-        <td>61.5</td>
+        <td>60.8</td>
       </tr>
       
       <tr>
@@ -1358,7 +1358,7 @@
         <li class="covered" data-hits="5" data-linenumber="106">
           <span class="hits">5</span>
           
-          <code class="ruby">    redirect_to courses_path, flash: flash</code>
+          <code class="ruby">    redirect_to :back, flash: flash</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="107">
@@ -4589,14 +4589,14 @@
           <code class="ruby">    def all_degree_credits(grades,exam)</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="42">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="15" data-linenumber="42">
+          <span class="hits">15</span>
           
           <code class="ruby">      sum = 0</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="43">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="15" data-linenumber="43">
+          <span class="hits">15</span>
           
           <code class="ruby">      if exam == 0</code>
         </li>
@@ -4607,14 +4607,14 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="45">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="13" data-linenumber="45">
+          <span class="hits">13</span>
           
           <code class="ruby">          grades.each do |grades|</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="46">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="37" data-linenumber="46">
+          <span class="hits">37</span>
           
           <code class="ruby">            sum = sum + extract_credit(grades.course.credit).to_f</code>
         </li>
@@ -4715,8 +4715,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="63">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="15" data-linenumber="63">
+          <span class="hits">15</span>
           
           <code class="ruby">      sum</code>
         </li>
@@ -4937,8 +4937,8 @@
           <code class="ruby">    def extract_credit(org_str)</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="100">
-          <span class="hits">12</span>
+        <li class="covered" data-hits="45" data-linenumber="100">
+          <span class="hits">45</span>
           
           <code class="ruby">      if !(org_str.nil?)</code>
         </li>
@@ -4949,14 +4949,14 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="102">
-          <span class="hits">12</span>
+        <li class="covered" data-hits="45" data-linenumber="102">
+          <span class="hits">45</span>
           
           <code class="ruby">        hours_credit = org_str.split(&quot;/&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="103">
-          <span class="hits">12</span>
+        <li class="covered" data-hits="45" data-linenumber="103">
+          <span class="hits">45</span>
           
           <code class="ruby">        credit = hours_credit[1]</code>
         </li>
@@ -6227,14 +6227,14 @@
           <code class="ruby">  def current_user</code>
         </li>
       
-        <li class="covered" data-hits="792" data-linenumber="34">
-          <span class="hits">792</span>
+        <li class="covered" data-hits="781" data-linenumber="34">
+          <span class="hits">781</span>
           
           <code class="ruby">    if session[:user_id]</code>
         </li>
       
-        <li class="covered" data-hits="714" data-linenumber="35">
-          <span class="hits">714</span>
+        <li class="covered" data-hits="703" data-linenumber="35">
+          <span class="hits">703</span>
           
           <code class="ruby">      @current_user||= User.find_by(id: session[:user_id])</code>
         </li>
