@@ -7,3 +7,14 @@ two:
   course: two
   user: czj2
   grade: 60
+
+three:
+  course: course5
+  user: czj2
+  grade: 78
+
+grade4:
+  course: course6
+  user: czj2
+  grade: 78
+  degree: true

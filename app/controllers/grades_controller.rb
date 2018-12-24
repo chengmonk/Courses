@@ -12,8 +12,8 @@ class GradesController < ApplicationController
     else
       flash = {:danger => "上传失败.请重试"}
     end
-    redirect_to :back, flash: flash
-    # redirect_to grades_path(course_id: params[:course_id]), flash: flash
+    # redirect_to :back, flash: flash
+    redirect_to grades_path(course_id: params[:course_id]), flash: flash
   end
 
   def index

@@ -35,6 +35,15 @@ teacherhu:
   department: 计算机与控制学院
   password_digest: <%= User.digest('password') %>
 
+teacher6:
+  name: teacher6
+  email: teacher6@test.com
+  teacher: true
+  department: 计算机与控制学院
+  password_digest: <%= User.digest('password') %>
+  token: 123
+  active: true
+
   <% (0..45).each do |n| %>
 student_<%= n %>:
   name: <%= "user#{n}" %>
