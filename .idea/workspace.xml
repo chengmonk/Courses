@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7b1c0f9-5303-4042-90a5-05cecbda0e94" name="Default" comment="修改readme">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="d7b1c0f9-5303-4042-90a5-05cecbda0e94" name="Default" comment="修改readme" />
     <ignored path="vim.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -582,7 +580,7 @@
       <workItem from="1545528422247" duration="8599000" />
       <workItem from="1545574444884" duration="3575000" />
       <workItem from="1545612780338" duration="81000" />
-      <workItem from="1545612878477" duration="16731000" />
+      <workItem from="1545612878477" duration="17094000" />
     </task>
     <task id="LOCAL-00001" summary="nothing">
       <created>1542783138548</created>
@@ -654,7 +652,21 @@
       <option name="project" value="LOCAL" />
       <updated>1545638914533</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="修改readme">
+      <created>1545639089947</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1545639089947</updated>
+    </task>
+    <task id="LOCAL-00012" summary="修改readme">
+      <created>1545639157780</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1545639157780</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -690,7 +702,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107038000" />
+    <option name="totallyTimeSpent" value="107401000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -703,7 +715,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="124" y="52" width="1680" height="973" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.51607716" side_tool="true" weight="0.18803419" />
       <window_info content_ui="combo" id="Project" order="1" sideWeight="0.48392284" visible="true" weight="0.18803419" />
