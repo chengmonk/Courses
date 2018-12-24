@@ -272,13 +272,5 @@ module CourseHelper
     end
   end
 
-  def in_course_table?(id)
-    if !current_user.grades.find_by_course_id(params[:id])
-      false
-    else
-      true
-    end
-  end
-
 
 end

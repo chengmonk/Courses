@@ -17,7 +17,7 @@ one:
   exam_type: "大开卷"
   department: "数学学院"
   semester: "2018-1"
-# column: value
+  teacher: teacherluo
 #
 two:
   course_code: "011D9032Z﹡"
@@ -32,39 +32,89 @@ two:
   exam_type: "课堂开卷"
   department: "数学学院"
   semester: "2018-1"
-
-
-#  column: value
+  teacher: teacherluo
 
 three:
-  course_code: "091M4003H"
-  name: "计算机网络"
-  course_type: "专业核心课"
-  credit: "60/3.0"
-  limit_num: ""
-  course_week: "第2-20周"
-  course_time: "周五(2-4)"
-  semester: Autumn2016
-  class_room: "教1-107"
+  course_code: "011D9039Z﹡"
+  name: "overnumber"
+  course_type: "其它"
+  credit: "40/2.0"
+  limit_num: "14"
+  student_num: "15"
+  course_week: "第2-12周"
+  course_time: "周二(5-6)"
+  class_room: "N306"
   teaching_type: "课堂讲授为主"
-  exam_type: "闭卷笔试"
+  exam_type: "大开卷"
+  department: "数学学院"
+  semester: "2018-1"
   teacher: teacherluo
-  open: true
 
-four:
-  course_code: "091M4003H"
-  name: "计算机网络"
-  course_type: "专业核心课"
-  credit: "60/3.0"
-  limit_num: ""
-  course_week: "第2-20周"
-  course_time: "周五(2-4)"
-  semester: Autumn2016
-  class_room: "教1-107"
+course4:
+  course_code: "011D9039Z﹡"
+  name: "course4"
+  course_type: "其它"
+  credit: "40/2.0"
+  limit_num: "14"
+  student_num: "1"
+  course_week: "第2-12周"
+  course_time: "周一(5-6)"
+  class_room: "N306"
   teaching_type: "课堂讲授为主"
-  exam_type: "闭卷笔试"
+  exam_type: "大开卷"
+  department: "数学学院"
+  semester: "2018-1"
   teacher: teacherluo
-  open: true
+
+course5:
+  course_code: "011D9039Z﹡"
+  name: "course5"
+  course_type: "其它"
+  credit: "40/2.0"
+  limit_num: "14"
+  student_num: "1"
+  course_week: "第2-10周"
+  course_time: "周一(5-6)"
+  class_room: "N306"
+  teaching_type: "课堂讲授为主"
+  exam_type: "大开卷"
+  department: "数学学院"
+  semester: "2018-1"
+  teacher: teacherluo
+
+course6:
+  course_code: "011D9039Z﹡"
+  name: "course6"
+  course_type: "其它"
+  credit: "40/2.0"
+  limit_num: "14"
+  student_num: "1"
+  course_week: "第11-20周"
+  course_time: "周一(5-6)"
+  class_room: "N306"
+  teaching_type: "课堂讲授为主"
+  exam_type: "大开卷"
+  department: "数学学院"
+  semester: "2018-1"
+  teacher: teacherluo
+
+course7:
+  course_code: "011D9039Z﹡"
+  name: "course6"
+  course_type: "其它"
+  credit: "40/2.0"
+  limit_num: "14"
+  student_num: "1"
+  course_week: "第11-20周"
+  course_time: "周三(5-6)"
+  class_room: "N306"
+  teaching_type: "课堂讲授为主"
+  exam_type: "大开卷"
+  department: "数学学院"
+  semester: "2018-1"
+  teacher: teacher6
+
+
 
 
 

@@ -68,4 +68,9 @@ class UserLoginTest < ActionDispatch::IntegrationTest
     assert_select "a[href=?]", sessions_login_path
     assert_select "a[href=?]", sessions_logout_path,      count: 0
   end
+
+  test "logout" do
+    delete  "/sessions/logout"
+    assert_redirected_to root_url
+  end
 end

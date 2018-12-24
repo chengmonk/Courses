@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :notices
   get 'user_mailer/accout_activation'
 
   get 'user_mailer/password_reset'
@@ -28,6 +29,7 @@ Rails.application.routes.draw do
   match '/users', to: 'users#show', via: 'get'
   match '/active', to: 'sessions#active', via: 'get'
   match '/select', to: 'courses#select', via: 'get'
+  # get "/list/course/" => "courses#list"
 
   resources :courses do
     member do
@@ -41,6 +43,7 @@ Rails.application.routes.draw do
       get :list
       get :my_course_list
       get :credit_statistics
+      post :list
     end
   end
 

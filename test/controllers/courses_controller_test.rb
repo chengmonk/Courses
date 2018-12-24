@@ -27,7 +27,7 @@ class CoursesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should not get select_course when not logged in" do
-    get select_course_path(@user)
+    get select_path(@user)
     assert_not flash.empty?
     assert_redirected_to root_url
   end

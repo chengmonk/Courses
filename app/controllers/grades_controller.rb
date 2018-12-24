@@ -8,12 +8,12 @@ class GradesController < ApplicationController
     @grade = Grade.find_by_id(params[:id])
     if @grade.update_attributes!(:grade => params[:grade][:grade])
       flash = {:success => "#{@grade.user.name} #{@grade.course.name}的成绩已成功修改为 #{@grade.grade}"}
-      UserMailer.push_grade(@grade).deliver
+      UserMailer.push_grade(@grade).deliver_now
     else
       flash = {:danger => "上传失败.请重试"}
     end
-    redirect_to :back, flash: flash
-    # redirect_to grades_path(course_id: params[:course_id]), flash: flash
+    # redirect_to :back, flash: flash
+    redirect_to grades_path(course_id: params[:course_id]), flash: flash
   end
 
   def index

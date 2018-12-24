@@ -37,6 +37,16 @@ class StudentGenerator
 end
 
 #-------------------------------------------------------------------------------------
+Notice.create(
+    name: "test1",
+    content: "this is test1"
+)
+
+Notice.create(
+    name: "test2",
+    content: "this is test2"
+)
+
 
 User.create(
     name: "czj",
