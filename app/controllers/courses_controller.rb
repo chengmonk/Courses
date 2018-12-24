@@ -137,6 +137,10 @@ class CoursesController < ApplicationController
 
   def credit_statistics
 
+
+    @stu_type = ["学硕" , "专硕" , "直博"]
+    @selected_type = params[:type]
+
     @all_degree_grades = current_user.grades.where(:degree => true)
     @all_not_degree_grades = current_user.grades.where(:degree => false)
 
@@ -144,8 +148,8 @@ class CoursesController < ApplicationController
     @degree_exam_credits=all_degree_credits(@all_degree_grades,1)
 
 
-    @public_major_credits = all_public_credits(@all_not_degree_grades, "公共必修课",0)
-    @public_major_exam_credits = all_public_credits(@all_not_degree_grades, "公共必修课",1)
+    @public_major_credits = all_public_credits(current_user.grades, "公共必修课",0)
+    @public_major_exam_credits = all_public_credits(current_user.grades, "公共必修课",1)
 
     @public_not_credits = all_public_credits(@all_not_degree_grades, "公共选修课",0)
     @public_not_exam_credits = all_public_credits(@all_not_degree_grades, "公共选修课",1)

@@ -18,6 +18,14 @@
       
         <div class="panel-body">
           <% if (student_logged_in? )%>
+          <div class="panel-body">
+            <%= form_tag({}, {:method => :get}) do %>
+              <%= label_tag "学生类型:" %>
+              <%= select_tag :type, options_for_select(@stu_type, :selected=>params[:type]) %>
+              <%= button_tag "查询" %>
+            <% end %>
+          </div>
+  
           
             <table class="table table-striped" >
             <h3 align="center"><%= @year_term_current %></h3>
@@ -39,15 +47,29 @@
                     <br>中国特色社会主义理论与实践研究（2学分）
                     <br>自然辩证法概论（1学分）
                     <br>硕士学位英语（英语A）（3学分）
+                    <% if @selected_type == "专硕"%>
                     <br>知识产权（1学分）
                     <br>信息检索（1学分）
                     <br>专业英语（2学分）
                     <br>工程伦理（0.5学分）
+                    <% end %>
+
+                    <% if @selected_type == "直博"%>
+                    <br>中国马克思主义与当代（2学分）
+                    <br>英语B（2学分）
+                    <% end %>
+
 
                   </td>
+                  <% if @selected_type == "直博"%>
+                  <td>>=2学分</td>
+                  <td>>=16学分</td>
+                  <td>>=38学分</td>
+                  <% else %>
                   <td>>=2学分</td>
                   <td>>=12学分</td>
                   <td>>=30学分</td>
+                  <% end%>
                 </tr>
 
                 <tr>
@@ -66,9 +88,6 @@
                   <td><%= @degree_exam_credits.to_s + "学分" %></td>
                   <td><%= @all_exam_credits.to_s + "学分" %></td>
                 </tr>
-            
-
-
 
             </tbody>
           </table>
