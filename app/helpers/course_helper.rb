@@ -28,9 +28,6 @@ module CourseHelper
 
   	end
 
-  	def is_time_conflict?
-  	end
-
     def systeminfo_exit?
 
       if Systeminfo.all.count == 2
