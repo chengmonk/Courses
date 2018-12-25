@@ -62,7 +62,23 @@ tips：Heroku的注册和登录可能需要科学上网，请自备梯子。
 * * *
 
 ### 总体测试结果截图
-<img src="/lib/测试结果.png" width="700"> 
+<img src="/lib/测试结果.png" width="700">  
+  
+
+* * *
+
+#### 系统压力测试
+结果如下：
+```
+4584 fetches, 1026 max parallel, 1.28786e+06 bytes, in 10.0035 seconds
+280.947 mean bytes/connection
+458.238 fetches/sec, 128741 bytes/sec
+msecs/connect: 310.481 mean, 1359.88 max, 262.762 min
+msecs/first-response: 4800.2 mean, 8508 max, 362.847 min
+4191 bad byte counts
+HTTP response codes:
+  code 200 -- 695
+```
 
 * * *
 

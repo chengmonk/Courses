@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7b1c0f9-5303-4042-90a5-05cecbda0e94" name="Default" comment="readme修改">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d7b1c0f9-5303-4042-90a5-05cecbda0e94" name="Default" comment="readme修改" />
     <ignored path="vim.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -125,8 +123,8 @@
         <entry file="file://$PROJECT_DIR$/压力测试.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="349">
-                <caret line="32" selection-start-line="32" selection-end-line="39" selection-end-column="17" />
+              <first_editor relative-caret-position="426">
+                <caret line="78" column="4" selection-start-line="78" selection-start-column="4" selection-end-line="78" selection-end-column="4" />
               </first_editor>
               <second_editor />
             </state>
@@ -241,7 +239,6 @@
         <option value="$PROJECT_DIR$/test/controllers/notices_controller_test.rb" />
         <option value="$PROJECT_DIR$/test/fixtures/systeminfos.yml" />
         <option value="$PROJECT_DIR$/test/fixtures/courses.yml" />
-        <option value="$PROJECT_DIR$/压力测试.md" />
         <option value="$PROJECT_DIR$/test/integration/course_query_test.rb" />
         <option value="$PROJECT_DIR$/test/controllers/courses_controller_test.rb" />
         <option value="$PROJECT_DIR$/test/controllers/grades_controller_test.rb" />
@@ -260,6 +257,7 @@
         <option value="$PROJECT_DIR$/app/controllers/courses_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/shared/_sidenav.html.erb" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/压力测试.md" />
       </list>
     </option>
   </component>
@@ -630,7 +628,7 @@
       <workItem from="1545612878477" duration="24225000" />
       <workItem from="1545655287817" duration="2721000" />
       <workItem from="1545663440816" duration="1406000" />
-      <workItem from="1545666658781" duration="3541000" />
+      <workItem from="1545666658781" duration="3863000" />
     </task>
     <task id="LOCAL-00001" summary="nothing">
       <created>1542783138548</created>
@@ -821,7 +819,14 @@
       <option name="project" value="LOCAL" />
       <updated>1545706017434</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="readme修改">
+      <created>1545720051767</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1545720051767</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -857,7 +862,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122200000" />
+    <option name="totallyTimeSpent" value="122522000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -870,7 +875,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="53" width="1680" height="973" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.51607716" side_tool="true" weight="0.18803419" />
       <window_info content_ui="combo" id="Project" order="1" sideWeight="0.48392284" visible="true" weight="0.1941392" />
@@ -1214,8 +1218,8 @@
     <entry file="file://$PROJECT_DIR$/压力测试.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="349">
-            <caret line="32" selection-start-line="32" selection-end-line="39" selection-end-column="17" />
+          <first_editor relative-caret-position="426">
+            <caret line="78" column="4" selection-start-line="78" selection-start-column="4" selection-end-line="78" selection-end-column="4" />
           </first_editor>
           <second_editor />
         </state>
