@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7b1c0f9-5303-4042-90a5-05cecbda0e94" name="Default" comment="添加答辩ppt">
+    <list default="true" id="d7b1c0f9-5303-4042-90a5-05cecbda0e94" name="Default" comment="ppt修改">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/结题答辩.pptx" beforeDir="false" />
     </list>
     <ignored path="vim.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -122,8 +120,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="61" column="30" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
+            <state relative-caret-position="315">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
             </state>
           </provider>
         </entry>
@@ -281,7 +279,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="11" />
-    <option name="y" value="37" />
+    <option name="y" value="36" />
     <option name="width" value="1680" />
     <option name="height" value="973" />
   </component>
@@ -635,7 +633,7 @@
       <workItem from="1545612878477" duration="24225000" />
       <workItem from="1545655287817" duration="2721000" />
       <workItem from="1545663440816" duration="1406000" />
-      <workItem from="1545666658781" duration="6724000" />
+      <workItem from="1545666658781" duration="7975000" />
     </task>
     <task id="LOCAL-00001" summary="nothing">
       <created>1542783138548</created>
@@ -861,7 +859,28 @@
       <option name="project" value="LOCAL" />
       <updated>1545745492020</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="添加答辩ppt,修改gemfile中web console">
+      <created>1545747444556</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1545747444556</updated>
+    </task>
+    <task id="LOCAL-00034" summary="修改gemfile中web console">
+      <created>1545747547712</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1545747547712</updated>
+    </task>
+    <task id="LOCAL-00035" summary="ppt修改">
+      <created>1545748399842</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1545748399842</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -897,7 +916,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125383000" />
+    <option name="totallyTimeSpent" value="126634000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -909,15 +928,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="11" y="37" width="1680" height="973" extended-state="0" />
+    <frame x="11" y="36" width="1680" height="973" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.51607716" side_tool="true" weight="0.18803419" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.48392284" visible="true" weight="0.1941392" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.48392284" visible="true" weight="0.1941392" />
       <window_info id="Structure" order="2" weight="0.24973376" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.53235656" side_tool="true" visible="true" weight="0.28092486" />
       <window_info anchor="bottom" id="Version Control" order="1" sideWeight="0.4957265" weight="0.32485548" />
-      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.46764347" visible="true" weight="0.28092486" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" sideWeight="0.46764347" visible="true" weight="0.28092486" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.3287483" />
       <window_info anchor="bottom" id="Run" order="5" sideWeight="0.48290598" weight="0.5260116" />
@@ -1008,7 +1027,10 @@
     <MESSAGE value="选课左边菜单蓝色小提示" />
     <MESSAGE value="readme修改" />
     <MESSAGE value="添加答辩ppt" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加答辩ppt" />
+    <MESSAGE value="添加答辩ppt,修改gemfile中web console" />
+    <MESSAGE value="修改gemfile中web console" />
+    <MESSAGE value="ppt修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="ppt修改" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
@@ -1257,8 +1279,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="61" column="30" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
+        <state relative-caret-position="315">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
         </state>
       </provider>
     </entry>
