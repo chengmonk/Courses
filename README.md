@@ -1,4 +1,4 @@
-# Course Select [![Build Status](https://travis-ci.org/PENGZhaoqing/CourseSelect.svg?branch=master)](https://travis-ci.org/PENGZhaoqing/CourseSelect)
+# [Course Select](https://csiie.herokuapp.com/) 
 
 ### 本机部署：
 以下的部署步骤在Mac和Linux环境下均可执行：
