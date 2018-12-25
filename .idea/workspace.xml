@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d7b1c0f9-5303-4042-90a5-05cecbda0e94" name="Default" comment="readme修改">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/.resultset.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/.resultset.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coverage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/测试结果.png" beforeDir="false" afterPath="$PROJECT_DIR$/lib/测试结果.png" afterDir="false" />
     </list>
     <ignored path="vim.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -128,8 +125,8 @@
         <entry file="file://$PROJECT_DIR$/压力测试.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="514">
-                <caret line="39" column="17" selection-start-line="31" selection-end-line="39" selection-end-column="17" />
+              <first_editor relative-caret-position="349">
+                <caret line="32" selection-start-line="32" selection-end-line="39" selection-end-column="17" />
               </first_editor>
               <second_editor />
             </state>
@@ -280,7 +277,7 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="y" value="53" />
     <option name="width" value="1680" />
     <option name="height" value="973" />
   </component>
@@ -633,7 +630,7 @@
       <workItem from="1545612878477" duration="24225000" />
       <workItem from="1545655287817" duration="2721000" />
       <workItem from="1545663440816" duration="1406000" />
-      <workItem from="1545666658781" duration="3194000" />
+      <workItem from="1545666658781" duration="3541000" />
     </task>
     <task id="LOCAL-00001" summary="nothing">
       <created>1542783138548</created>
@@ -817,7 +814,14 @@
       <option name="project" value="LOCAL" />
       <updated>1545699084761</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="readme修改">
+      <created>1545706017434</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1545706017434</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -853,7 +857,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121853000" />
+    <option name="totallyTimeSpent" value="122200000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -865,15 +869,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="973" extended-state="0" />
+    <frame x="0" y="53" width="1680" height="973" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.51607716" side_tool="true" weight="0.18803419" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.48392284" visible="true" weight="0.1941392" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.48392284" visible="true" weight="0.1941392" />
       <window_info id="Structure" order="2" weight="0.24973376" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.53174603" side_tool="true" visible="true" weight="0.28092486" />
       <window_info anchor="bottom" id="Version Control" order="1" sideWeight="0.496337" weight="0.32485548" />
-      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.46825397" visible="true" weight="0.28092486" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" sideWeight="0.46825397" visible="true" weight="0.28092486" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.3287483" />
       <window_info anchor="bottom" id="Run" order="5" sideWeight="0.48290598" weight="0.5260116" />
@@ -1210,8 +1214,8 @@
     <entry file="file://$PROJECT_DIR$/压力测试.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="514">
-            <caret line="39" column="17" selection-start-line="31" selection-end-line="39" selection-end-column="17" />
+          <first_editor relative-caret-position="349">
+            <caret line="32" selection-start-line="32" selection-end-line="39" selection-end-column="17" />
           </first_editor>
           <second_editor />
         </state>
