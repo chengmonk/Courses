@@ -37,11 +37,6 @@ class SessionsController < ApplicationController
       flash = {danger: 'unknown error'}
     end
     redirect_to root_url, flash: flash
-    #     if @user != nil  && @user.token == params[:token] then
-    #
-    #     else
-    #       flash= {:danger => "验证失败！请重新获取重置密码邮件！\n #{@user.token} \n#{params[:token]}"}
-    #     end
   end
 
   def reset

@@ -2,30 +2,17 @@ class NoticesController < ApplicationController
   include SessionsHelper
   before_action :set_notice, only: [:index,:show]
   before_action :admin_logged_in?,only: [:show, :edit, :update, :destroy]
-  # GET /notices
-  # GET /notices.json
   def index
     @notice = Notice.order(created_at: :desc)
   end
-
-  # GET /notices/1
-  # GET /notices/1.json
   def show
     @notice = Notice.find_by_id(params[:id])
   end
-
-  # GET /notices/new
   def new
     @notice = Notice.new
   end
-
-
-
-  # POST /notices
-  # POST /notices.json
   def create
     @notice = Notice.new(notice_params)
-
     respond_to do |format|
       if @notice.save
         format.html { redirect_to @notice, notice: '成功创建公告！' }
@@ -36,10 +23,6 @@ class NoticesController < ApplicationController
       end
     end
   end
-
-
-
-
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_notice
