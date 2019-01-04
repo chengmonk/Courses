@@ -43,7 +43,7 @@ class SessionsController < ApplicationController
     @user = User.find_by(email: params[:email].downcase)
     if !@user.nil? && @user.token == params[:token]
     else
-      flash = {danger: '验证失败！请重新获取重置密码邮件！'}
+      flash = {danger: "验证失败！请重新获取重置密码邮件！#{@user.token}***#{params[:token]}"}
       redirect_to root_url, flash: flash
     end
   end
