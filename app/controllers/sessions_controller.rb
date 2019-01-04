@@ -69,6 +69,7 @@ class SessionsController < ApplicationController
       @user = User.find_by(email: email_params[:email].downcase)
       if !@user.nil? && @user.save
         @user.token = SecureRandom.urlsafe_base64
+        @user.save
         UserMailer.password_reset(@user).deliver_now
         flash = {info: "重置密码邮件已发送至 #{mail},请注意查收！"}
       else
