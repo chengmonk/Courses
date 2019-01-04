@@ -89,7 +89,7 @@ class CoursesController < ApplicationController
     @wanted_course = Course.find_by_id(params[:id])
 
     if is_over_number?(@wanted_course)
-      flash = {:warning => "Over numbers!: #{@wanted_course.name}"}
+      flash = {:warning => "选课失败!课程: #{@wanted_course.name} 人数已满!"}
     elsif is_exit_course?(params[:id])
       flash = {:warning => "您的课表中已存在:#{@wanted_course.name}，请选择其他课程！"}
     elsif is_time_conflict?(@wanted_course) #need to modify later
@@ -192,22 +192,8 @@ class CoursesController < ApplicationController
 def my_course_list
     @course=current_user.teaching_courses.where(:semester => Systeminfo.first.semester) if teacher_logged_in?
     @course= current_user.courses.where(:semester => Systeminfo.first.semester) if student_logged_in?
-    # @all_semester= get_course_info(@course, 'year', 'term_num')
     @current_semester = get_current_semester()
     semester = nil
-    # if request.post?
-    #   if params[:semester] !=''
-    #     @current_semester = params[:semester]
-    #     semester = semester_to_array(@current_semester)
-    #   end
-    # else
-    #   semester = semester_to_array(@current_semester)
-    # end
-    # if semester
-    #   @course= filter_course_by_semester(@course, semester)
-    # else
-    #   @current_semester = nil
-    # end
     @course_time_table = get_course_table(@course)
 
   end

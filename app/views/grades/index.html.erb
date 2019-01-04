@@ -16,7 +16,7 @@
             <%= form_tag({}, {:method => :get}) do %>
               <%= label_tag "学年-学期:" %>
               <%= select_tag :year_term, options_for_select(@semesters, :selected=>params[:year_term]), include_blank: "All " %>
-              <%= button_tag "query" %>
+              <%= button_tag "查询" %>
             <% end %>
           <% end %>
           <div>
