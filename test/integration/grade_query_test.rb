@@ -17,32 +17,32 @@ class GradeQueryTest < ActionDispatch::IntegrationTest
     
   end
 
-  test "query course index no login" do
+  test "query grades index no login" do
     get grades_url
     assert_redirected_to root_path
     # assert_response 200
   end
 
-  test "query course index login for student" do
+  test "query grade index login for student" do
     log_in_as(@user2)
     get grades_url
     assert_response 200
   end
 
-  test "query course by department for student" do
+  test "query grade by semester for student" do
   	log_in_as(@user2)
     get grades_url( params: {"year_term" => "2018-1"})
     assert_response 200
   end
 
 
-  test "query course index login for teacher" do
+  test "query grades index login for teacher" do
     log_in_as(@teacher6)
     get grades_url( params: {"course_id" => @course6.id})
     assert_response 200
   end
 
-  test "query course index no login for teacher" do
+  test "query grades index no login for teacher" do
     get grades_url( params: {"course_id" => @course6.id})
     assert_redirected_to root_path
   end
